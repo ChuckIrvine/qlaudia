@@ -89,6 +89,12 @@ cp .env.example .env                 # fill in keys
 6. `step9_embeddings.py` — Voyage AI `voyage-3` embeddings
 7. `step10_graph_population.py` — writes everything to Neo4j
 
+**Two domain creation routes — maximize code reuse between them:**
+1. **GUI route** — triggered from the UI via FastAPI (`src/api/main.py`). Uses `build_phase2_pipeline()` (flat graph, no checkpointing) with `astream()`.
+2. **CLI route** — `scripts/domain/create_domain_kg.py`. Uses `build_pipeline()` (nested subgraph graph, SQLite checkpointing) with `stream()`.
+
+Both routes share all step functions in `src/domain_creation_pipeline/steps/`. When modifying pipeline logic, keep the step functions as the single source of truth and avoid duplicating orchestration logic between the two routes.
+
 **Two graph functions in `graph.py`:**
 - `build_phase2_pipeline()` — flat graph for FastAPI streaming (used by API server)
 - Nested subgraph version — used by CLI script `scripts/domain/create_domain_kg.py`
