@@ -89,15 +89,10 @@ cp .env.example .env                 # fill in keys
 6. `step9_embeddings.py` — Voyage AI `voyage-3` embeddings
 7. `step10_graph_population.py` — writes everything to Neo4j
 
-**Two domain creation routes — maximize code reuse between them:**
-1. **GUI route** — triggered from the UI via FastAPI (`src/api/main.py`). Uses `build_phase2_pipeline()` (flat graph, no checkpointing) with `astream()`.
-2. **CLI route** — `scripts/domain/create_domain_kg.py`. Uses `build_pipeline()` (nested subgraph graph, SQLite checkpointing) with `stream()`.
+**Domain creation route:** triggered from the UI via FastAPI (`src/api/main.py`). Uses `build_phase2_pipeline()` (flat graph, no checkpointing) with `astream()`. All pipeline logic lives in `src/domain_creation_pipeline/steps/`.
 
-Both routes share all step functions in `src/domain_creation_pipeline/steps/`. When modifying pipeline logic, keep the step functions as the single source of truth and avoid duplicating orchestration logic between the two routes.
-
-**Two graph functions in `graph.py`:**
-- `build_phase2_pipeline()` — flat graph for FastAPI streaming (used by API server)
-- Nested subgraph version — used by CLI script `scripts/domain/create_domain_kg.py`
+**One graph function in `graph.py`:**
+- `build_phase2_pipeline()` — flat graph for FastAPI streaming
 
 **LLM configuration** (`src/domain_creation_pipeline/models.py`):
 - Primary role (steps 1, 3): `claude-sonnet-4-6` (default) or Groq `llama-3.3-70b-versatile` via `PRIMARY_LLM_PROVIDER=groq`
@@ -118,7 +113,6 @@ Both routes share all step functions in `src/domain_creation_pipeline/steps/`. W
 ### Key scripts (run from `qlaudia_server/`)
 
 ```bash
-.venv/bin/python scripts/domain/create_domain_kg.py   # full CLI pipeline (pauses for concept review)
 .venv/bin/python scripts/domain/delete_domain.py -local
 .venv/bin/python scripts/domain/migrate_to_prod.py --domain "Domain Name"
 ```
