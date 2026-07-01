@@ -95,7 +95,7 @@ cp .env.example .env                 # fill in keys
 - `build_phase2_pipeline()` — flat graph for FastAPI streaming
 
 **LLM configuration** (`src/domain_creation_pipeline/models.py`):
-- Primary role (steps 1, 3): `claude-sonnet-4-6` (default) or Groq `llama-3.3-70b-versatile` via `PRIMARY_LLM_PROVIDER=groq`
+- Primary role (steps 1, 3): `claude-sonnet-5` (default) or Groq `llama-3.3-70b-versatile` via `PRIMARY_LLM_PROVIDER=groq`
 - QA role (step 3b): `claude-haiku-4-5-20251001` (default) via `QA_LLM_PROVIDER`
 - Steps 4 and 5 always use Claude directly (bypass the factory)
 
