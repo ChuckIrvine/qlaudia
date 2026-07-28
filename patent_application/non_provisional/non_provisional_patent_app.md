@@ -210,16 +210,16 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 1 — Property-Graph KB Generation
 
-1. A computer-implemented method for generating a course knowledge base as a property graph, comprising:
-    - receiving a subject description;
-    - querying an AI agent, using a subject-agnostic prompt, to generate a set of topic nodes for the subject;
-    - presenting the set of topic nodes to a human reviewer via a graphical interface prior to further generation, the reviewer being permitted to omit or add topic nodes;
-    - responsive to reviewer confirmation, querying the AI agent to generate, for each confirmed topic node, study content and one or more assessment questions;
-    - querying the AI agent to generate a bounded vocabulary of relationship types, each relationship type comprising a label and an archetype classification, from the generated study content across the confirmed topic nodes;
-    - querying the AI agent to assign, between pairs of the confirmed topic nodes, a relationship type selected from the generated vocabulary, and validating the assigned relationships by removing relationships referencing a topic node not among the confirmed topic nodes, self-referential relationships, and duplicate relationships;
-    - querying the AI agent to generate prerequisite relationships between the confirmed topic nodes, identifying cycles among the generated prerequisite relationships, and deterministically removing edges from any identified cycle according to a fixed rule until no cycles remain;
-    - computing, for each topic node, an importance score based on a graph-centrality measure of the topic node within the prerequisite relationships; and
-    - storing the topic nodes, study content, assessment questions, relationship types, prerequisite relationships, and importance scores as nodes and edges of a property graph in a graph database.
+1. A computer-implemented method for generating a course knowledge base as a property graph, comprising:  
+   receiving a subject description;  
+   querying an AI agent, using a subject-agnostic prompt, to generate a set of topic nodes for the subject;  
+   presenting the set of topic nodes to a human reviewer via a graphical interface prior to further generation, the reviewer being permitted to omit or add topic nodes;  
+   responsive to reviewer confirmation, querying the AI agent to generate, for each confirmed topic node, study content and one or more assessment questions;  
+   querying the AI agent to generate a bounded vocabulary of relationship types, each relationship type comprising a label and an archetype classification, from the generated study content across the confirmed topic nodes;  
+   querying the AI agent to assign, between pairs of the confirmed topic nodes, a relationship type selected from the generated vocabulary, and validating the assigned relationships by removing relationships referencing a topic node not among the confirmed topic nodes, self-referential relationships, and duplicate relationships;  
+   querying the AI agent to generate prerequisite relationships between the confirmed topic nodes, identifying cycles among the generated prerequisite relationships, and deterministically removing edges from any identified cycle according to a fixed rule until no cycles remain;  
+   computing, for each topic node, an importance score based on a graph-centrality measure of the topic node within the prerequisite relationships; and  
+   storing the topic nodes, study content, assessment questions, relationship types, prerequisite relationships, and importance scores as nodes and edges of a property graph in a graph database.
 
 2. The method of claim 1, further comprising querying the AI agent to determine, for a topic node assigned zero prerequisite relationships, whether the topic node is foundational to the subject, and if not, re-querying the AI agent to generate at least one prerequisite relationship for the topic node.
 
@@ -233,12 +233,12 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 2 — Adaptive Learning Framework
 
-7. A computer-implemented method for delivering adaptive online learning using a course knowledge base comprising topic nodes connected by prerequisite relationships, comprising:
-    - recording, for a user, a mastery indication for each of a plurality of topic nodes;
-    - determining, for a given topic node, that the user is ready to study the given topic node when the user has a recorded mastery indication for each topic node connected to the given topic node by a direct prerequisite relationship;
-    - responsive to a user selection of any topic node in the course knowledge base as a learning goal, identifying a transitive-prerequisite subgraph of the selected topic node, and generating an ordered learning path through the subgraph by topologically sorting the subgraph such that each topic node precedes every topic node for which it is a prerequisite;
-    - where two or more topic nodes are available to be ordered next in the topological sort, selecting among them using a precomputed importance score associated with each topic node; and
-    - presenting the ordered learning path to the user.
+7. A computer-implemented method for delivering adaptive online learning using a course knowledge base comprising topic nodes connected by prerequisite relationships, comprising:  
+   recording, for a user, a mastery indication for each of a plurality of topic nodes;  
+   determining, for a given topic node, that the user is ready to study the given topic node when the user has a recorded mastery indication for each topic node connected to the given topic node by a direct prerequisite relationship;  
+   responsive to a user selection of any topic node in the course knowledge base as a learning goal, identifying a transitive-prerequisite subgraph of the selected topic node, and generating an ordered learning path through the subgraph by topologically sorting the subgraph such that each topic node precedes every topic node for which it is a prerequisite;  
+   where two or more topic nodes are available to be ordered next in the topological sort, selecting among them using a precomputed importance score associated with each topic node; and  
+   presenting the ordered learning path to the user.
 
 8. The method of claim 7, further comprising: presenting assessment questions associated with a topic node to the user; recording the mastery indication for the topic node responsive to the user correctly answering an assessment question; and, upon a subsequent presentation of assessment questions for the same topic node, excluding assessment questions the user has previously answered correctly.
 
@@ -252,10 +252,10 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 3 — Structural Relationship Graph Generation
 
-13. A computer-implemented method for generating typed relationships among a set of AI-generated content items, comprising:
-    - querying an AI agent to generate a bounded vocabulary of relationship types from a corpus of content items, each relationship type comprising a label and an archetype classification selected from a fixed set of archetypes;
-    - querying the AI agent, in batches, to assign relationship types selected from the generated vocabulary between pairs of content items, together with a natural-language description of each assigned relationship; and
-    - validating the assigned relationships by discarding relationships that reference a content item not present in the corpus, relationships between a content item and itself, and duplicate relationships between the same pair of content items.
+13. A computer-implemented method for generating typed relationships among a set of AI-generated content items, comprising:  
+    querying an AI agent to generate a bounded vocabulary of relationship types from a corpus of content items, each relationship type comprising a label and an archetype classification selected from a fixed set of archetypes;  
+    querying the AI agent, in batches, to assign relationship types selected from the generated vocabulary between pairs of content items, together with a natural-language description of each assigned relationship; and  
+    validating the assigned relationships by discarding relationships that reference a content item not present in the corpus, relationships between a content item and itself, and duplicate relationships between the same pair of content items.
 
 14. The method of claim 13, wherein the fixed set of archetypes includes at least functional, hierarchical, causal, spatial, temporal, and safety classifications.
 
@@ -265,12 +265,12 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 4 — Conversational Course-Brief Elicitation
 
-17. A computer-implemented method for eliciting a structured course-creation brief via conversational interaction, comprising:
-    - conducting, via an AI agent, a bounded-turn conversational interview with a user, the interview limited to a maximum number of interview questions;
-    - accepting, during the interview, one or more file attachments from the user, the file attachments comprising at least one of a document, an image, or a portable document format file;
-    - extracting information relevant to the course-creation brief from the accepted file attachments;
-    - populating a structured brief comprising a plurality of fixed fields, including a target audience, a coverage overview, a desired outcome, and a tone-and-style descriptor, from the conversational interaction and the extracted information; and
-    - providing the structured brief as input to a course-knowledge-base generation process.
+17. A computer-implemented method for eliciting a structured course-creation brief via conversational interaction, comprising:  
+    conducting, via an AI agent, a bounded-turn conversational interview with a user, the interview limited to a maximum number of interview questions;  
+    accepting, during the interview, one or more file attachments from the user, the file attachments comprising at least one of a document, an image, or a portable document format file;  
+    extracting information relevant to the course-creation brief from the accepted file attachments;  
+    populating a structured brief comprising a plurality of fixed fields, including a target audience, a coverage overview, a desired outcome, and a tone-and-style descriptor, from the conversational interaction and the extracted information; and  
+    providing the structured brief as input to a course-knowledge-base generation process.
 
 18. The method of claim 17, wherein the course-knowledge-base generation process comprises the method of claim 1.
 
@@ -278,12 +278,12 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 5 — Hybrid Semantic Search over a Generated KB
 
-20. A computer-implemented method for searching a course knowledge base generated by an AI agent, the course knowledge base comprising a plurality of domain nodes each associated with a summary embedding, and a plurality of topic nodes each associated with a content embedding, the method comprising:
-    - receiving a search query;
-    - generating a query embedding from the search query;
-    - responsive to a first search mode, comparing the query embedding against the summary embeddings to identify a set of candidate domain nodes, and filtering the set of candidate domain nodes by a first similarity threshold;
-    - responsive to a second search mode, comparing the query embedding against the content embeddings to identify a set of candidate topic nodes, reranking the set of candidate topic nodes using a reranking model that jointly evaluates the search query and content of each candidate topic node, and filtering the reranked candidate topic nodes by a second similarity threshold; and
-    - returning the filtered candidate nodes in response to the search query.
+20. A computer-implemented method for searching a course knowledge base generated by an AI agent, the course knowledge base comprising a plurality of domain nodes each associated with a summary embedding, and a plurality of topic nodes each associated with a content embedding, the method comprising:  
+    receiving a search query;  
+    generating a query embedding from the search query;  
+    responsive to a first search mode, comparing the query embedding against the summary embeddings to identify a set of candidate domain nodes, and filtering the set of candidate domain nodes by a first similarity threshold;  
+    responsive to a second search mode, comparing the query embedding against the content embeddings to identify a set of candidate topic nodes, reranking the set of candidate topic nodes using a reranking model that jointly evaluates the search query and content of each candidate topic node, and filtering the reranked candidate topic nodes by a second similarity threshold; and  
+    returning the filtered candidate nodes in response to the search query.
 
 21. The method of claim 20, wherein the first similarity threshold and the second similarity threshold are independently configured.
 
@@ -291,11 +291,11 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 ### Claim Set 6 — Interactive Mastery-Aware Knowledge Graph Navigation
 
-23. A computer-implemented method for navigating a course knowledge base via an interactive graph view, the course knowledge base comprising topic nodes connected by prerequisite relationships and typed structural relationships, the method comprising:
-    - displaying a graph view centered on a currently-selected topic node, the graph view including each topic node directly connected to the currently-selected topic node by a prerequisite relationship or a typed structural relationship, in either direction;
-    - determining, for each displayed neighboring topic node, a mastery-relative visual state selected from at least four states: mastered by the user, recommended next, ready to be studied, and not yet ready to be studied;
-    - rendering each displayed neighboring topic node according to its determined mastery-relative visual state; and
-    - responsive to a user selection of a displayed neighboring topic node, re-centering the graph view on the selected topic node and displaying the topic nodes directly connected to it, thereby enabling the user to navigate the course knowledge base by traversing structural and prerequisite relationships one topic node at a time.
+23. A computer-implemented method for navigating a course knowledge base via an interactive graph view, the course knowledge base comprising topic nodes connected by prerequisite relationships and typed structural relationships, the method comprising:  
+    displaying a graph view centered on a currently-selected topic node, the graph view including each topic node directly connected to the currently-selected topic node by a prerequisite relationship or a typed structural relationship, in either direction;  
+    determining, for each displayed neighboring topic node, a mastery-relative visual state selected from at least four states: mastered by the user, recommended next, ready to be studied, and not yet ready to be studied;  
+    rendering each displayed neighboring topic node according to its determined mastery-relative visual state; and  
+    responsive to a user selection of a displayed neighboring topic node, re-centering the graph view on the selected topic node and displaying the topic nodes directly connected to it, thereby enabling the user to navigate the course knowledge base by traversing structural and prerequisite relationships one topic node at a time.
 
 24. The method of claim 23, further comprising filtering the displayed neighboring topic nodes to a fixed number having the greatest precomputed importance score, and rendering a numeric rank indicator on each retained neighboring topic node reflecting its relative importance ranking among the displayed neighbors.
 
@@ -303,7 +303,7 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 
 26. The method of claim 23, further comprising, responsive to a user interaction with a displayed typed structural relationship, presenting a natural-language description associated with that relationship.
 
-27. The method of claim 23, wherein the mastery-relative visual state is determined according to the method of claim 7, and the precomputed importance score is computed according to the method of claim 1.
+27. The method of claim 23, wherein the mastery-relative visual state is determined by comparing the user's recorded mastery indications against the direct prerequisite relationships of each displayed neighboring topic node, and wherein the precomputed importance score is based on a graph-centrality measure of the topic node within the prerequisite relationships.
 
 28. A computer system configured to implement the method of claim 23.
 
