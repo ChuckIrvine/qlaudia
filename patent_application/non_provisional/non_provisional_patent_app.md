@@ -67,6 +67,7 @@ This graph structure is a generalization of, and superset of, a flat JSON schema
 
 #### Population Method
 Referring to FIG. 1:
+
 1. **Input Subject / Structured Brief (100):** The course-creation user must first pass through a first AI agent invocation conducting the bounded-turn conversational elicitation of Invention 4, which asks the user questions until the scope of the course is clarified and produces a structured, multi-part course description (the brief). This brief is then passed to a second, separate AI agent invocation — the topic-discovery module (104) below — which generates the course itself.
 2. **Domain Research module (102), optional:** An AI agent is given the option to autonomously perform a bounded number of web searches to gather current, subject-specific background information when its own knowledge confidence is low, producing a research summary used to inform subsequent steps.
 3. **Topic Discovery module (104):** The AI agent is queried, using a prompt template that is invariant across subject matter ("generic"), to return a set of topic names and short descriptions for the subject. The course-creation user does not specify a depth; instead, the agent infers an appropriate depth tier (e.g., introductory, intermediate, advanced, or an adaptive tier self-determined within a bounded range) directly from the structured course description (the brief of Invention 4), and the number of topics generated follows from that inferred tier.
@@ -148,6 +149,7 @@ subject_competency = Σ correct_answers / Σ total_questions_presented  (pooled 
 Beyond prerequisite ordering, topics in a knowledge base are often connected by other meaningful relationships (e.g., one topic transfers a property to another, one topic is a specialization of another, one topic is a safety consideration for another). Rather than using a fixed, pre-authored relationship vocabulary, this invention generates the vocabulary itself from the content corpus, then assigns relationships from that vocabulary:
 
 Referring to FIG. 4:
+
 1. **Vocabulary-Generation module (410), Call 1:** An AI agent is queried, given the full corpus of generated study content (400) for a subject, to propose a bounded set of relationship types. Each relationship type comprises a short label and an archetype classification selected from a fixed set (e.g., functional, hierarchical, causal, spatial, temporal, safety, other), producing the relationship-type vocabulary (420).
 2. **Relationship-Assignment module (430), Call 2:** The AI agent is queried, in batches, using both the corpus (400) and the generated vocabulary (420), to assign relationship types from the vocabulary between pairs of topics, together with a short natural-language description specific to that pairing.
 3. **Validation module (440):** Assigned relationships are programmatically checked and discarded if they reference a topic not present in the corpus (a hallucinated endpoint), are self-referential (a topic related to itself), or duplicate an already-assigned relationship between the same pair of topics, producing the validated set of typed relationships (450).
@@ -183,6 +185,7 @@ Rather than requiring a course creator (600) to author a subject description dir
 The knowledge base produced by Invention 1 carries two independent classes of vector embedding — a **domain-tagline embedding** per domain and a **topic-content embedding** per topic. Search operates in one of two modes:
 
 Referring to FIG. 5, a search query (500) is passed to a query-embedding generator (510), and then to one of two modes:
+
 1. **Domain search:** the query embedding is compared against domain-tagline embeddings by a domain comparator (520); results are filtered by a first threshold filter (522).
 2. **Topic (concept) search:** the query embedding is compared against topic-content embeddings by a concept comparator (530) to obtain a candidate set; the candidate set is then **reranked** by a reranker (532) that jointly evaluates the query and each candidate's content, and filtered by a second threshold filter (534), independent of the first.
 
