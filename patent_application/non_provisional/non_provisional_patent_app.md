@@ -325,6 +325,11 @@ Applicable to academic institutions, corporate training, certification programs,
 
 ---
 
+## Abstract
+A computer-implemented system generates a course knowledge base as an AI-populated property graph and delivers adaptive, goal-directed learning over it. A first AI agent conducts a bounded conversational interview to elicit a structured course brief, seeding a pipeline that discovers topics subject to human review, generates study content and assessments, derives a bounded, archetype-classified vocabulary of typed structural relationships with validated edges, generates prerequisite relationships with deterministic cycle resolution, computes centrality-based importance scores, and generates vector embeddings. An adaptive learning framework gates topic readiness on prerequisite mastery, constructs an on-demand learning path to any selected topic via an importance-tie-broken topological sort, and re-tests only previously incorrect assessment items. A dual-index hybrid search retrieves domain and topic content by embedding similarity and reranking. An interactive graph view color-codes a topic's neighbors by mastery state and re-centers on a selected neighbor to enable traversal.
+
+---
+
 ## Figures
 
 ### FIG. 1 — Content-Generation Pipeline, with Human Review Checkpoint
