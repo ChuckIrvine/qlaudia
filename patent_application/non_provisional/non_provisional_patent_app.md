@@ -12,6 +12,7 @@ This invention relates to educational technology systems, particularly to comput
 
 ## Background of the Invention
 Traditional learning management systems and online course creation platforms face significant limitations:
+
 - Manual content creation is slow and costly.
 - Learning pathways are rigid and do not adapt to individual mastery levels.
 - Prerequisite enforcement is minimal or non-existent.
@@ -34,6 +35,7 @@ The invention comprises six independent but complementary innovations:
 6. **Interactive Mastery-Aware Knowledge Graph Navigation:** A graph-view navigation method that renders a topic's direct neighbors color-coded by the user's mastery-relative state, filters displayed neighbors to those of greatest importance with a rank overlay, presents relationship descriptions on interaction, and re-centers the view on a selected neighbor to enable traversal of the knowledge base.
 
 ## Brief Description of the Drawings
+
 - **FIG. 1** — Overall content-generation pipeline, including the human-in-the-loop review checkpoint. (`figures/fig1.svg`)
 - **FIG. 2** — Property-graph schema: node types, edge types, and key fields. (`figures/fig2.svg`)
 - **FIG. 3** — Worked example of importance-weighted topological goal-path construction. (`figures/fig3.svg`)
@@ -78,6 +80,7 @@ Referring to FIG. 1:
 11. **Graph-Database Write module (120):** The populated graph is written to a graph database, producing the course knowledge base (122), making it immediately available to the adaptive learning framework (Invention 2).
 
 #### Embodiments
+
 - The graph database may be Neo4j or any other property-graph-capable store; the underlying data may additionally be serialized to JSON, XML, or YAML for interchange.
 - The AI agent(s) may be any LLM; different pipeline steps may use different LLMs selected for cost/quality trade-offs (e.g., a lower-cost model for assessment generation and domain metadata than for study-content generation).
 - The KB may be used in educational, corporate training, certification, or research contexts.
@@ -89,6 +92,7 @@ Referring to FIG. 1:
 ### Invention 2 — Adaptive, Goal-Directed Learning Framework
 
 #### Core Logic
+
 - Receives a course knowledge base (Invention 1) containing topic nodes, prerequisite edges, study content, and assessment questions.
 - Records, per user, a mastery indication for each topic the user has completed.
 - Determines **readiness**: a topic is ready to be studied once the user has a recorded mastery indication for each topic connected to it by a direct prerequisite edge. Because a topic can only become mastered once its own direct prerequisites are mastered, readiness composes transitively across the prerequisite graph without requiring an explicit transitive-closure computation at query time.
@@ -124,11 +128,13 @@ subject_competency = Σ correct_answers / Σ total_questions_presented  (pooled 
 ```
 
 #### Features
+
 - On-demand construction of an ordered learning path to any user-selected topic, rather than a fixed, pre-authored curriculum sequence.
 - Deterministic importance-based tie-breaking distinguishes this from probabilistic or purely likelihood-based recommendation approaches.
 - Targeted re-testing reduces the number of assessment items a returning user must answer.
 
 #### Embodiments
+
 - Implemented as a web app, mobile app, or desktop application.
 - Integrated with any LMS via API.
 - Usable for skill training, language learning, or academic subjects.
@@ -147,6 +153,7 @@ Referring to FIG. 4:
 3. **Validation module (440):** Assigned relationships are programmatically checked and discarded if they reference a topic not present in the corpus (a hallucinated endpoint), are self-referential (a topic related to itself), or duplicate an already-assigned relationship between the same pair of topics, producing the validated set of typed relationships (450).
 
 #### Embodiments
+
 - The content items related need not be course topics; the method is applicable to any AI-generated corpus of discrete content items requiring typed structural relationships.
 - The archetype set is extensible; a fixed default set is used as one embodiment.
 
@@ -164,6 +171,7 @@ Rather than requiring a course creator (600) to author a subject description dir
 5. The completed structured brief (640) is passed to a second, separate AI agent invocation — the KB generation method of Invention 1, seeding its topic-discovery module (104, FIG. 1).
 
 #### Embodiments
+
 - The maximum number of interview questions is configurable.
 - The structured brief's field set may be extended without altering the interview method itself.
 
@@ -181,6 +189,7 @@ Referring to FIG. 5, a search query (500) is passed to a query-embedding generat
 Both modes converge on a common output of filtered candidate nodes (540) returned in response to the query.
 
 #### Embodiments
+
 - The two thresholds may be tuned independently per deployment.
 - The embedding and reranking models may be substituted for any comparable models.
 - Search may be restricted to a specified domain or set of domains as an optional filter prior to reranking.
@@ -199,6 +208,7 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 5. **Re-Centering Navigation module (740):** Responsive to a user selection of a displayed neighboring topic node, the module designates the selected node as the new center topic node (705), repeating steps 1–4 for its own immediate neighborhood — enabling the user to traverse the knowledge base by following structural and prerequisite relationships one node at a time, rather than browsing a static, undifferentiated view of the full graph.
 
 #### Embodiments
+
 - The mastery-relative visual states may be encoded by color, icon, shading, or any other visual distinction.
 - The fixed number of retained neighbors in the Importance-Ranked Filtering module (730) is configurable.
 - Visibility of neighboring topic nodes may be independently toggled by mastery-relative state, and visibility of prerequisite relationships may be independently toggled separately from typed structural relationships.
@@ -279,6 +289,7 @@ The adaptive learning framework (Invention 2) and the structural relationship gr
 ---
 
 ## Technical Advantages
+
 - Separates KB generation, the adaptive learning framework, structural relationship generation, conversational elicitation, hybrid search, and graph navigation into independently valuable and independently licensable components.
 - Reduces content-creation time from months to hours, with a single human review checkpoint rather than manual authoring throughout.
 - Captures non-prerequisite structural relationships between topics without requiring a pre-authored relationship taxonomy.
