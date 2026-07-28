@@ -1,7 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(.venv/bin/python -c ' *)"
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(pandoc submittal_docs/non_provisional_written_description.docx -t plain)",
+      "Bash(pandoc /tmp/written_description4.md -o /tmp/written_description4.html --standalone --metadata title=\"Non-Provisional Patent Application\")",
+      "Bash(python3 -)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=submittal_docs/non_provisional_written_description.pdf \"file:///tmp/written_description4.html\")",
+      "Bash(git push *)",
+      "Bash(pandoc \"/Users/charlesirvine/Downloads/non_provisional_written_description-APP.TEXT-feedback.docx\" -t plain)",
+      "Bash(rm -rf /tmp/feedback_inspect)",
+      "Bash(mkdir /tmp/feedback_inspect)",
+      "Bash(unzip -o -q \"/Users/charlesirvine/Downloads/non_provisional_written_description-APP.TEXT-feedback.docx\" -d /tmp/feedback_inspect)",
+      "Read(//tmp/**)",
+      "Read(//tmp/feedback_inspect/**)",
+      "Read(//tmp/feedback_inspect/word/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(dd if=/tmp/feedback_inspect/word/document.xml of=/tmp/feedback_inspect/word/document_copy.xml bs=1m)",
+      "Bash(pandoc /tmp/declaration_final.md -o /tmp/declaration_final.html --standalone --metadata title=\"Inventor Declaration\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=/Users/charlesirvine/src/qlaudia/patent_application/non_provisional/submittal_docs/inventor_declaration.pdf \"file:///tmp/declaration_final.html\")"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/private/tmp"
     ]
   }
 }
