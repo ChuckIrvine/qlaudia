@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1150" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="850" height="1150" fill="#ffffff"/>
+  <text x="800" y="30" font-size="14" text-anchor="end" fill="#000">1/7</text>
+
+  <!-- Box helper positions: x=175 width=500 height=50, vertical step 90, start y=60 -->
+  <!-- 100 -->
+  <rect x="175" y="60" width="500" height="50" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="90" font-size="16" text-anchor="middle">Structured course brief (from FIG. 6)</text>
+  <line x1="150" y1="85" x2="175" y2="85" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="90" font-size="15" text-anchor="end">100</text>
+  <line x1="425" y1="110" x2="425" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 102 -->
+  <rect x="175" y="150" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="180" font-size="16" text-anchor="middle">Domain research module</text>
+  <line x1="150" y1="175" x2="175" y2="175" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="180" font-size="15" text-anchor="end">102</text>
+  <line x1="425" y1="200" x2="425" y2="240" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 104 -->
+  <rect x="175" y="240" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="270" font-size="16" text-anchor="middle">Topic discovery module</text>
+  <line x1="150" y1="265" x2="175" y2="265" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="270" font-size="15" text-anchor="end">104</text>
+  <line x1="425" y1="290" x2="425" y2="330" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 106 decision diamond -->
+  <polygon points="425,330 625,375 425,420 225,375" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="380" font-size="15" text-anchor="middle">Human review</text>
+  <text x="425" y="398" font-size="13" text-anchor="middle">checkpoint</text>
+  <line x1="200" y1="375" x2="225" y2="375" stroke="#000" stroke-width="1.5"/>
+  <text x="195" y="380" font-size="15" text-anchor="end">106</text>
+  <!-- loop back to 104 for omit/add -->
+  <path d="M 225,375 C 90,375 90,265 175,265" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="95" y="320" font-size="12" text-anchor="middle">omit / add,</text>
+  <text x="95" y="335" font-size="12" text-anchor="middle">re-confirm</text>
+  <line x1="425" y1="420" x2="425" y2="460" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="440" y="445" font-size="12">confirmed</text>
+
+  <!-- 108 -->
+  <rect x="175" y="460" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="490" font-size="16" text-anchor="middle">Study content generation module</text>
+  <line x1="150" y1="485" x2="175" y2="485" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="490" font-size="15" text-anchor="end">108</text>
+  <line x1="425" y1="510" x2="425" y2="550" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 110 -->
+  <rect x="175" y="550" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="580" font-size="16" text-anchor="middle">Assessment generation module</text>
+  <line x1="150" y1="575" x2="175" y2="575" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="580" font-size="15" text-anchor="end">110</text>
+  <line x1="425" y1="600" x2="425" y2="640" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 112 -->
+  <rect x="175" y="640" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="665" font-size="15" text-anchor="middle">Structural relationship generation module</text>
+  <text x="425" y="682" font-size="12" text-anchor="middle">(see FIG. 4)</text>
+  <line x1="150" y1="665" x2="175" y2="665" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="670" font-size="15" text-anchor="end">112</text>
+  <line x1="425" y1="690" x2="425" y2="730" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 114 -->
+  <rect x="175" y="730" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="753" font-size="15" text-anchor="middle">Prerequisite generation &amp; cycle-resolution module</text>
+  <line x1="150" y1="755" x2="175" y2="755" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="760" font-size="15" text-anchor="end">114</text>
+  <line x1="425" y1="780" x2="425" y2="820" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 116 -->
+  <rect x="175" y="820" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="850" font-size="16" text-anchor="middle">Importance-scoring module</text>
+  <line x1="150" y1="845" x2="175" y2="845" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="850" font-size="15" text-anchor="end">116</text>
+  <line x1="425" y1="870" x2="425" y2="910" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 118 -->
+  <rect x="175" y="910" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="940" font-size="16" text-anchor="middle">Embedding generation module</text>
+  <line x1="150" y1="935" x2="175" y2="935" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="940" font-size="15" text-anchor="end">118</text>
+  <line x1="425" y1="960" x2="425" y2="1000" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 120 -->
+  <rect x="175" y="1000" width="500" height="50" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="1030" font-size="16" text-anchor="middle">Graph-database write module</text>
+  <line x1="150" y1="1025" x2="175" y2="1025" stroke="#000" stroke-width="1.5"/>
+  <text x="145" y="1030" font-size="15" text-anchor="end">120</text>
+  <line x1="425" y1="1050" x2="425" y2="1080" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 122 output -->
+  <rect x="275" y="1080" width="300" height="45" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="1107" font-size="15" text-anchor="middle">Course knowledge base (122)</text>
+
+  <text x="425" y="1145" font-size="16" text-anchor="middle" font-weight="bold">FIG. 1</text>
+</svg>

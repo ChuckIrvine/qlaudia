@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 900" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow6" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="850" height="900" fill="#ffffff"/>
+  <text x="800" y="30" font-size="14" text-anchor="end" fill="#000">6/7</text>
+
+  <!-- 600 user -->
+  <rect x="325" y="50" width="200" height="50" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="80" font-size="14" text-anchor="middle">Course creator (600)</text>
+  <line x1="425" y1="100" x2="425" y2="140" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- 605 interview module -->
+  <rect x="225" y="140" width="400" height="60" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="165" font-size="14" text-anchor="middle" font-weight="bold">Conversational-interview module (605)</text>
+  <text x="425" y="183" font-size="11" text-anchor="middle">asks next question, up to a maximum count</text>
+  <line x1="425" y1="200" x2="425" y2="240" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- 610 user response / attachment -->
+  <rect x="225" y="240" width="400" height="60" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="265" font-size="14" text-anchor="middle" font-weight="bold">User response (610)</text>
+  <text x="425" y="283" font-size="11" text-anchor="middle">optionally with file attachment(s)</text>
+  <line x1="425" y1="300" x2="425" y2="340" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- 615 attachment extraction -->
+  <rect x="225" y="340" width="400" height="55" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="365" font-size="14" text-anchor="middle" font-weight="bold">Attachment-extraction module (615)</text>
+  <text x="425" y="382" font-size="10" text-anchor="middle">document / image / PDF content extraction</text>
+  <line x1="425" y1="395" x2="425" y2="435" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- 620 decision -->
+  <polygon points="425,435 640,485 425,535 210,485" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="480" font-size="13" text-anchor="middle">Sufficient info gathered,</text>
+  <text x="425" y="497" font-size="13" text-anchor="middle">or max questions reached?</text>
+  <text x="425" y="515" font-size="11" text-anchor="middle">(620)</text>
+
+  <!-- loop back to 605 -->
+  <path d="M 210,485 C 60,485 60,170 225,170" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow6)"/>
+  <text x="75" y="330" font-size="12" text-anchor="middle">no —</text>
+  <text x="75" y="346" font-size="12" text-anchor="middle">ask next</text>
+  <text x="75" y="362" font-size="12" text-anchor="middle">question</text>
+
+  <line x1="425" y1="535" x2="425" y2="575" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+  <text x="440" y="560" font-size="12">yes</text>
+
+  <!-- 630 populate brief -->
+  <rect x="225" y="575" width="400" height="60" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="600" font-size="14" text-anchor="middle" font-weight="bold">Structured-brief population module (630)</text>
+  <text x="425" y="618" font-size="10" text-anchor="middle">course name, target audience, coverage overview,</text>
+  <line x1="425" y1="635" x2="425" y2="675" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- 640 output -->
+  <rect x="275" y="675" width="300" height="55" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="698" font-size="14" text-anchor="middle" font-weight="bold">Structured course brief (640)</text>
+  <text x="425" y="715" font-size="10" text-anchor="middle">multi-part; desired outcome, tone-and-style</text>
+
+  <line x1="425" y1="730" x2="425" y2="770" stroke="#000" stroke-width="2" marker-end="url(#arrow6)"/>
+  <text x="425" y="795" font-size="13" text-anchor="middle" font-style="italic">passed to a second, separate AI agent invocation —</text>
+  <text x="425" y="812" font-size="13" text-anchor="middle" font-style="italic">topic-discovery module (104), FIG. 1</text>
+
+  <text x="425" y="870" font-size="16" text-anchor="middle" font-weight="bold">FIG. 6</text>
+</svg>

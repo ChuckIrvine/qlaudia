@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 700" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="850" height="700" fill="#ffffff"/>
+  <text x="800" y="30" font-size="14" text-anchor="end" fill="#000">3/7</text>
+
+  <!-- Topic A 300 -->
+  <rect x="60" y="60" width="160" height="70" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="140" y="85" font-size="14" text-anchor="middle" font-weight="bold">Topic A (300)</text>
+  <text x="140" y="102" font-size="11" text-anchor="middle">importance = 0.8</text>
+  <text x="140" y="117" font-size="11" text-anchor="middle">(mastered)</text>
+
+  <!-- Topic B 310 -->
+  <rect x="620" y="60" width="160" height="70" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="700" y="85" font-size="14" text-anchor="middle" font-weight="bold">Topic B (310)</text>
+  <text x="700" y="102" font-size="11" text-anchor="middle">importance = 0.3</text>
+  <text x="700" y="117" font-size="11" text-anchor="middle">(mastered)</text>
+
+  <!-- Topic C 320 -->
+  <rect x="345" y="220" width="160" height="60" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="255" font-size="14" text-anchor="middle" font-weight="bold">Topic C (320)</text>
+
+  <!-- Topic E 330 -->
+  <rect x="60" y="220" width="160" height="60" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="140" y="255" font-size="14" text-anchor="middle" font-weight="bold">Topic E (330)</text>
+
+  <!-- Topic D goal 340 -->
+  <rect x="345" y="380" width="160" height="70" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="410" font-size="14" text-anchor="middle" font-weight="bold">Topic D (340)</text>
+  <text x="425" y="428" font-size="11" text-anchor="middle">(selected goal)</text>
+
+  <!-- edges -->
+  <line x1="150" y1="130" x2="380" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="140" y1="130" x2="140" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="690" y1="130" x2="460" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="425" y1="280" x2="425" y2="380" stroke="#000" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="160" y1="280" x2="380" y2="380" stroke="#000" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- ordered path box 350 -->
+  <rect x="60" y="500" width="720" height="130" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="525" font-size="15" text-anchor="middle" font-weight="bold">Ordered learning path to goal D (350)</text>
+  <text x="100" y="555" font-size="13">1. Topic A (300) — already mastered</text>
+  <text x="100" y="578" font-size="13">2. Topic C (320) — prerequisites A, B mastered; ready</text>
+  <text x="100" y="601" font-size="13">3. Topic E (330) — prerequisite A mastered; ordered ahead of any remaining</text>
+  <text x="120" y="620" font-size="13">tied node because importance(A) = 0.8 exceeds the competing tie-break value</text>
+  <text x="100" y="643" font-size="13" font-weight="bold">4. Topic D (340) — goal reached</text>
+
+  <text x="425" y="680" font-size="16" text-anchor="middle" font-weight="bold">FIG. 3</text>
+</svg>

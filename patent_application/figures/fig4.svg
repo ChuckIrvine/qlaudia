@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 700" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow4" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="850" height="700" fill="#ffffff"/>
+  <text x="800" y="30" font-size="14" text-anchor="end" fill="#000">4/7</text>
+
+  <!-- 400 corpus -->
+  <rect x="275" y="50" width="300" height="60" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="85" font-size="15" text-anchor="middle">Corpus of topic study content (400)</text>
+
+  <line x1="425" y1="110" x2="425" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+
+  <!-- 410 Call 1 -->
+  <rect x="225" y="150" width="400" height="70" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="178" font-size="14" text-anchor="middle" font-weight="bold">Call 1: vocabulary-generation module (410)</text>
+  <text x="425" y="198" font-size="12" text-anchor="middle">AI agent proposes labels + archetypes</text>
+
+  <line x1="425" y1="220" x2="425" y2="260" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+
+  <!-- 420 vocabulary -->
+  <rect x="275" y="260" width="300" height="55" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="292" font-size="14" text-anchor="middle">Relationship-type vocabulary (420)</text>
+
+  <!-- feed 400 and 420 into 430 -->
+  <line x1="425" y1="315" x2="425" y2="360" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+  <path d="M 275,80 C 100,80 100,395 225,395" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+
+  <!-- 430 Call 2 -->
+  <rect x="225" y="360" width="400" height="80" rx="10" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="388" font-size="14" text-anchor="middle" font-weight="bold">Call 2: relationship-assignment module (430)</text>
+  <text x="425" y="406" font-size="12" text-anchor="middle">assigns typed edges between topic pairs,</text>
+  <text x="425" y="422" font-size="12" text-anchor="middle">batched, with per-edge description</text>
+
+  <line x1="425" y1="440" x2="425" y2="480" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+
+  <!-- 440 validation -->
+  <polygon points="425,480 625,530 425,580 225,530" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="525" font-size="13" text-anchor="middle">Validation module (440):</text>
+  <text x="425" y="543" font-size="11" text-anchor="middle">drop hallucinated endpoints,</text>
+  <text x="425" y="558" font-size="11" text-anchor="middle">self-loops, duplicates</text>
+
+  <line x1="425" y1="580" x2="425" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrow4)"/>
+
+  <!-- 450 output -->
+  <rect x="275" y="620" width="300" height="50" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="425" y="650" font-size="14" text-anchor="middle" font-weight="bold">Validated HAS_RELATIONSHIP edges (450)</text>
+
+  <text x="425" y="695" font-size="16" text-anchor="middle" font-weight="bold">FIG. 4</text>
+</svg>
