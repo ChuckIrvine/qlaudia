@@ -20,11 +20,21 @@
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=/Users/charlesirvine/src/qlaudia/patent_application/non_provisional/submittal_docs/inventor_declaration.pdf \"file:///tmp/declaration_final.html\")",
       "Bash(pandoc submittal_docs/preliminary_amendment_remarks.md -o /tmp/prelim_amendment.html --standalone --metadata title=\"Preliminary Amendment\")",
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=submittal_docs/preliminary_amendment_remarks.pdf \"file:///tmp/prelim_amendment.html\")",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(.venv/bin/python -c \"import neo4j; print\\('ok'\\)\")",
+      "Bash(node -e \"console.log\\(require\\('/Users/charlesirvine/src/qlaudia/qlaudia_ui/node_modules/next/package.json'\\).version\\)\")",
+      "Bash(grep -E \"^tsx$|ts-node|esbuild\")",
+      "Bash(node /tmp/svgadapt_out/svgadapt.js)",
+      "Bash(node /tmp/svgadapt_old_out/svgadapt_old.js)",
+      "Bash(node /tmp/svgadapt_out2/svgadapt.js)",
+      "Bash(rm -rf /tmp/svgadapt_out /tmp/svgadapt_out2 /tmp/svgadapt_old_out /tmp/old_full.tsx /tmp/old1.ts *)",
+      "Bash(.venv/bin/python /private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/74007d9a-f075-42d1-be1d-837e4d47dec6/scratchpad/fix_overview_v2.py)",
+      "Bash(rm -f /private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/74007d9a-f075-42d1-be1d-837e4d47dec6/scratchpad/fix_overview_v2.py)"
     ],
     "additionalDirectories": [
       "/tmp",
-      "/private/tmp"
+      "/private/tmp",
+      "/private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/f23ea150-c9ce-4fa5-a70c-4674c9322a85/scratchpad"
     ]
   }
 }
