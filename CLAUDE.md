@@ -83,11 +83,12 @@ cp .env.example .env                 # fill in keys
 
 1. `step1_concept_map.py` — LLM generates concept list (runs separately before pipeline, user reviews)
 2. `step3_atomic_docs.py` — generates markdown doc per concept (batched, primary LLM)
-3. `step3b_qa.py` — generates quiz Q&A per concept (QA LLM, Haiku)
-4. `step4_edges.py` — generates concept relationship edges (primary LLM, max_tokens=32000)
-5. `step5_prerequisites.py` — generates prerequisite edges (primary LLM, max_tokens=32000)
-6. `step9_embeddings.py` — Voyage AI `voyage-3` embeddings
-7. `step10_graph_population.py` — writes everything to Neo4j
+3. `step3c_figures.py` — renders `[FIGURE: ...]` placeholders into computed SVGs: spec-derived assertions (QA LLM) + Python construction code (primary LLM) executed in a sandboxed subprocess (`figure_runtime/`), with a repair loop on failure
+4. `step3b_qa.py` — generates quiz Q&A per concept (QA LLM, Haiku)
+5. `step4_edges.py` — generates concept relationship edges (primary LLM, max_tokens=32000)
+6. `step5_prerequisites.py` — generates prerequisite edges (primary LLM, max_tokens=32000)
+7. `step9_embeddings.py` — Voyage AI `voyage-3` embeddings
+8. `step10_graph_population.py` — writes everything to Neo4j
 
 **Domain creation route:** triggered from the UI via FastAPI (`src/api/main.py`). Uses `build_phase2_pipeline()` (flat graph, no checkpointing) with `astream()`. All pipeline logic lives in `src/domain_creation_pipeline/steps/`.
 
