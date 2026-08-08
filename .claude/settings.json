@@ -29,7 +29,8 @@
       "Bash(node /tmp/svgadapt_out2/svgadapt.js)",
       "Bash(rm -rf /tmp/svgadapt_out /tmp/svgadapt_out2 /tmp/svgadapt_old_out /tmp/old_full.tsx /tmp/old1.ts *)",
       "Bash(.venv/bin/python /private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/74007d9a-f075-42d1-be1d-837e4d47dec6/scratchpad/fix_overview_v2.py)",
-      "Bash(rm -f /private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/74007d9a-f075-42d1-be1d-837e4d47dec6/scratchpad/fix_overview_v2.py)"
+      "Bash(rm -f /private/tmp/claude-501/-Users-charlesirvine-src-qlaudia/74007d9a-f075-42d1-be1d-837e4d47dec6/scratchpad/fix_overview_v2.py)",
+      "Bash(echo \"exit code: $?\")"
     ],
     "additionalDirectories": [
       "/tmp",
