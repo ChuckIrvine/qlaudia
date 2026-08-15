@@ -43,7 +43,7 @@ npm run env:prod     # switch to prod .env.local (points to prod Neo4j + prod Fa
 
 **API routes** (`app/api/`): Each folder is a REST endpoint. Key ones:
 - `auth/me` — resolves Clerk user, creates Neo4j user node, returns `canCreateDomain` and `editableDomains`
-- `search` — Voyage AI `voyage-3` embedding → Neo4j vector search → Voyage AI `rerank-2-lite` reranker (0.55 threshold)
+- `search` — Voyage AI `voyage-3` embedding → Neo4j vector search → Voyage AI `rerank-2-lite` reranker (0.5 threshold)
 - `concepts` — fetch concept content, progress, prerequisites
 - `progress` — track known/unknown concepts
 - `graph` — full graph query for GraphCanvas visualization
@@ -114,8 +114,8 @@ cp .env.example .env                 # fill in keys
 ### Key scripts (run from `qlaudia_server/`)
 
 ```bash
-.venv/bin/python scripts/domain/delete_domain.py -local
-.venv/bin/python scripts/domain/migrate_to_prod.py --domain "Domain Name"
+.venv/bin/python scripts/delete_domain.py -local
+.venv/bin/python scripts/migrate_to_prod.py --domain "Domain Name"
 ```
 
 ---
