@@ -1,3 +1,9 @@
 .DS_Store
 qlaudia_ui/
 qlaudia_server/
+
+# pitch deck build tooling
+pitch_deck/.venv/
+
+# PowerPoint lock files
+~$*
