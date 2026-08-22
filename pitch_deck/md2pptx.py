@@ -61,6 +61,7 @@ class Block:
     text: str = ""
     level: int = 0
     rows: list[list[str]] = field(default_factory=list)
+    media: str = "IMAGE"           # visual blocks only: IMAGE | VIDEO
 
 
 @dataclass
@@ -70,6 +71,7 @@ class Slide:
     blocks: list[Block] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
     kind: str = "content"          # content | title | divider
+    appendix: bool = False         # appendix slides carry an A-label, not a number
 
 
 # ---------------------------------------------------------------- markdown parse
@@ -137,7 +139,7 @@ def parse(md: str) -> list[Slide]:
             flush_para(para)
             text = stripped[4:].strip()
             if in_appendix:
-                cur = Slide(title=text)
+                cur = Slide(title=text, appendix=True)
                 slides.append(cur)
             elif cur is not None:
                 cur.blocks.append(Block("subhead", text))
@@ -199,13 +201,12 @@ def parse(md: str) -> list[Slide]:
             i += 1
             continue
 
-        # --- visual placeholder ----------------------------------------------
-        if stripped.startswith("**[VISUAL:") or stripped.startswith("[VISUAL:"):
+        # --- visual / video placeholder --------------------------------------
+        m = re.match(r"^\*{0,2}\[(VISUAL|VIDEO):\s*(.+?)\]\*{0,2}$", stripped, re.I)
+        if m:
             flush_para(para)
-            inner = stripped.strip("*").strip()[1:-1]
-            if inner.lower().startswith("visual:"):
-                inner = inner.split(":", 1)[1].strip()
-            cur.blocks.append(Block("visual", inner))
+            media = "VIDEO" if m.group(1).upper() == "VIDEO" else "IMAGE"
+            cur.blocks.append(Block("visual", m.group(2).strip(), media=media))
             i += 1
             continue
 
@@ -440,7 +441,7 @@ def render_visual(slide, b: Block, l, t, w) -> float:
     p = tf.paragraphs[0]
     p.alignment = PP_ALIGN.CENTER
     r = p.add_run()
-    r.text = "IMAGE PLACEHOLDER"
+    r.text = f"{b.media} PLACEHOLDER"
     r.font.size, r.font.bold, r.font.name = Pt(9.5), True, FONT
     r.font.color.rgb = ACCENT
     p2 = tf.add_paragraph()
@@ -561,23 +562,25 @@ def max_prefix(blocks: list[Block], avail_h: float, scale: float) -> int:
     return 1
 
 
-def _open_content_slide(prs, title: str, headline: str):
-    """Draw chrome (label, title, rule, headline); return (slide, body_top, body_height)."""
+def _open_content_slide(prs, title: str, headline: str, numbered: bool = True):
+    """Draw chrome (label, title, rule, headline); return (slide, body_top, body_height).
+
+    The "SLIDE n" chip is derived from the slide's actual position in the deck, so it
+    always matches what PowerPoint shows. Hand-written numbers drift the moment a slide
+    is added, split, or spills onto a continuation.
+    """
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     bg(slide, PAPER)
+    position = len(prs.slides)  # 1-based; the slide just added is the last one
 
-    label, _, rest = title.partition("—")
-    label, rest = label.strip(), rest.strip()
     _, tf = txbox(slide, M_L, M_T, BODY_W, 0.52)
     p = tf.paragraphs[0]
-    if rest and re.match(r"^Slide\s+\d+[a-z]?$", label):  # "Slide 7", "Slide 1b"
+    if numbered:
         r0 = p.add_run()
-        r0.text = label.upper() + "   "
+        r0.text = f"SLIDE {position}   "
         r0.font.size, r0.font.bold, r0.font.name = Pt(11), True, FONT
         r0.font.color.rgb = ACCENT
-        title_text = rest
-    else:
-        title_text = title
+    title_text = title
     r = p.add_run()
     r.text = title_text
     r.font.size, r.font.bold, r.font.name = Pt(25), True, FONT
@@ -618,7 +621,9 @@ def render_content(prs, s: Slide, warn: list[str]):
 
     while True:
         title = s.title if first else f"{s.title}  (cont.)"
-        slide, y, avail = _open_content_slide(prs, title, s.headline if first else "")
+        slide, y, avail = _open_content_slide(
+            prs, title, s.headline if first else "", numbered=not s.appendix
+        )
 
         if remaining:
             plan = layout_plan(remaining, avail)

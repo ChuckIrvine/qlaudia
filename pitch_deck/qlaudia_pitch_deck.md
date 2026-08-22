@@ -12,7 +12,7 @@
 
 ---
 
-## Slide 1 — Education Is the Largest Untransformed Market on Earth
+## Education Is the Largest Untransformed Market on Earth
 
 **Headline:** $7.3 trillion is spent teaching people every year. It is the last great industry whose product is still made entirely by hand.
 
@@ -56,7 +56,7 @@
 >
 > Say out loud, before anyone else says it: *"No company captures a market this size, and I'm not going to pretend otherwise."* Saying it first converts the deck's biggest liability into a credibility marker. Then land the actual point, which is **structural, not arithmetic**: education is the last enormous market where the core product — a coherent, sequenced body of knowledge taught in the right order — has never been *manufacturable*. It's hand-built by humans, one course at a time. That's why it costs what it costs. Qlaudia makes the knowledge itself manufacturable.
 >
-> Then immediately promise the follow-through: *"Slide 9 shows the specific slice I'm going after first, and what it's worth."* An angel who hears a $7.3T number and never hears a reachable number assumes you can't tell the difference. Don't leave that gap open across eight slides.
+> Then immediately promise the follow-through: *"the Business Model slide shows the specific slice I'm going after first, and what it's worth."* An angel who hears a $7.3T number and never hears a reachable number assumes you can't tell the difference. Don't leave that gap open across eight slides.
 >
 > Anticipated pushback: *"EdTech is a graveyard."* Correct — because prior EdTech sold *delivery* (an LMS, a video player, a quiz engine) into institutions that already had content. Qlaudia sells the content layer itself, which is the expensive part.
 >
@@ -68,7 +68,7 @@
 
 ---
 
-## Slide 1b — The Three Numbers That Matter
+## The Three Numbers That Matter
 
 **Headline:** The market is enormous, almost entirely analog, and nobody is selling the thing that would change that.
 
@@ -77,15 +77,15 @@
 3. **$0** — goes to a system that can generate a verified, prerequisite-structured course on demand
 
 > **Speaker notes:**
-> **Split off Slide 1 deliberately — these three numbers are the argument, and they were getting buried under two tables.** Delivered on their own slide they land as a sequence: enormous, analog, unserved. Pause after each.
+> **Split off the Market slide deliberately — these three numbers are the argument, and they were getting buried under two tables.** Delivered on their own slide they land as a sequence: enormous, analog, unserved. Pause after each.
 >
 > Number three is the one that does the work. One and two are context an informed angel may already half-know; three is the claim only you can make, and it sets up every slide that follows.
 >
-> If you are running short on time, this is the slide to linger on and Slide 1 is the one to move through quickly — the tables are reference material, this is the thesis.
+> If you are running short on time, this is the slide to linger on and the Market slide is the one to move through quickly — the tables are reference material, this is the thesis.
 
 ---
 
-## Slide 2 — The Problem
+## The Problem
 
 **Headline:** Every course is written from scratch by one expert. That's why education doesn't scale, doesn't adapt, and doesn't transfer.
 
@@ -98,11 +98,11 @@
 > **Speaker notes:**
 > The chatbot bullet is the one that matters. Every angel in the room has already used ChatGPT to learn something and has a private opinion about how well it went. Make the distinction concrete: a chatbot is a conversation that evaporates; Qlaudia is a structured, persistent, verifiable body of knowledge that a conversation can stand on.
 >
-> **Optional setup for Slide 4.** If you want the founder slide to detonate, plant the fuse here: "the hand-authoring bottleneck isn't new — it's the reason this whole approach stayed impractical for forty years." Then let Slide 4 reveal that you were one of the people who hit that wall and wrote it down.
+> **Optional setup for the Founder slide.** If you want the founder slide to detonate, plant the fuse here: "the hand-authoring bottleneck isn't new — it's the reason this whole approach stayed impractical for forty years." Then let the Founder slide reveal that you were one of the people who hit that wall and wrote it down.
 
 ---
 
-## Slide 3 — The Solution
+## The Solution
 
 **Headline:** Qlaudia generates a complete, prerequisite-structured knowledge graph for any subject — in hours, not months — and teaches from it adaptively.
 
@@ -112,10 +112,12 @@
 2. **Adaptive, goal-directed delivery.** Learners get multiple live learning paths computed from *transitive* prerequisite relationships against measured mastery. Set a goal concept; the system works backward through everything required to reach it.
 
 > **Speaker notes:** Mention that (1) and (2) are separately licensable — a publisher may want only the generation engine; a university may want only the delivery framework. That optionality is deliberate in the patent structure, and for an angel it means more than one way the asset pays off.
+>
+> **Set up the demo here.** "Any subject" is the strongest claim on this slide and the hardest to believe. Promise the evidence rather than arguing for it: *"In two slides I'll show you it building a course on raising an angel round."* Then stop — let them sit with the claim knowing proof is coming.
 
 ---
 
-## Slide 4 — Founder: I Designed This System in 1985
+## Founder: I Designed This System in 1985
 
 **Headline:** My master's thesis described Qlaudia. I earned my master's degree in CS. But the ideas could not have been put into practice — until now.
 
@@ -160,29 +162,52 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 >
 > ⚠️ TODO: get a clean, straight scan of the abstract page and of the §1.3 "Approach and Scope" page — the phone photos won't hold up projected.
 >
-> ⚠️ TODO: advisors, collaborators, or committed early hires — still the one real gap. A solo founder with a named technical advisor reads materially safer to an angel than a solo founder alone.
+> ⚠️ TODO: advisors, collaborators, or committed early hires — still the one real gap. A solo founder with a named advisor reads materially safer to an angel than a solo founder alone.
+>
+> **The efficient way to close it:** a recognised homeschool community figure — a co-op director, a curriculum reviewer, a well-followed practitioner — taken on as an advisor with a small vesting equity grant. That fills the credibility gap on this slide *and* creates a committed distribution partner (Appendix A11) with the same person. One conversation solves two of the deck's open problems.
 
 ---
 
-## Slide 5 — Product
+## Watch It Build a Course
 
-**Headline:** ⚠️ TODO — it already works. Show it.
+**Headline:** Here is Qlaudia building a complete course on raising an angel round — the one subject in the world you can grade on sight.
 
-- Create a domain live — the pipeline streams its progress on screen
-- Browse the result: concept list, generated instruction, computed figures, assessments
-- Knowledge graph visualization
-- Progress and mastery tracking
+**[VIDEO: recorded end-to-end run, time-lapsed to ~90 seconds]**
+
+- **The ask** — a plain-language description of the course you want. That is the entire input
+- **The advisor** — the model interrogates that description and turns it into a structured brief: audience, coverage, outcome, tone
+- **The syllabus** — proposed concepts, reviewed and edited by the author *before* a word is written
+- **The pipeline** — instruction, computed figures, assessments, typed relationships, prerequisite graph
+- **The finished course** — and the prerequisite graph showing what must be understood before what
+
+**A paragraph in. A complete course out, in about 18 minutes, unattended.**
 
 > **Speaker notes:**
-> For angels this is the highest-conviction slide in the deck, because it converts "interesting idea" into "this exists." Generating a domain *live on stage* is worth more than any slide you could put here.
+> **Say it is a recording, in the first sentence.** *"This is recorded — I'm not going to make you watch eighteen minutes."* If they suspect staging you lose more than the demo gains, and the honesty costs nothing. A live run is not worth the risk: eighteen minutes of runtime, a network dependency, and a known truncation bug are three ways to fail in front of the people you are asking for money.
 >
-> ⚠️ TODO: time a full generation run. If it's longer than ~90 seconds, pre-record it and play the recording — a live run that stalls in front of angels does more damage than a video.
+> **Why this subject, said out loud:** *"I picked the one subject everyone in this room already knows cold, so you can judge the output instead of taking my word for it."* That is the whole point — on any other topic they would have to trust you.
 >
-> ⚠️ TODO: screenshots needed regardless, as fallback and for the send-after version of the deck.
+> **Start the recording at the input screen, not at the pipeline.** The opening seconds carry the argument: what goes in is a paragraph a person could write in two minutes. Everything after that is machine. If you start mid-pipeline, the audience never learns how little was required, and the effort asymmetry is the point of the whole slide.
+>
+> **Name the two human checkpoints — they are features, not overhead.** The advisor interrogating the description shows the system pushes back on a vague ask rather than generating regardless. The syllabus review shows the author approves the concept list *before* any content is produced. For an angel whose instinctive worry is "AI slop," the visible answer is that a person signs off on the outline and the machine does the labour. Do not let these read as loading screens; say what each one is as it appears.
+>
+> **The callback to the Founder slide, if you want it.** CKS also worked by interrogating a human — but it interrogated them for the *knowledge*, one concept at a time, which is what made it impractical. Qlaudia's advisor interrogates you for your *intent*, which takes two minutes, and the model supplies the knowledge. The dialogue survived; what it asks for is what changed. This is a good line and easy to overplay — use it once, in one sentence, and move on.
+>
+> **The offer that replaces the live demo — make it before you leave.** A recording can be cherry-picked and sophisticated investors know it, so recover the proof afterward: *"Name any subject. I'll send you the course tomorrow."* Zero risk, more impressive than a live run, and it turns the demo into a reason to talk again — which is exactly what you want from an angel who has not committed.
+>
+> **⚠️ TODO — read the course before you record it.** Pre-generating exists precisely so you can inspect before they do; skipping that step throws away the main advantage of not going live. You do not need to review everything: read the 5–8 concepts that appear on camera, plus anything touching deal terms, dilution, or valuation caps. Roughly twenty minutes. Fix or cut what is wrong — you control the edit.
+>
+> Two reasons this matters more here than it would on any other topic: an angel needs one glance at one paragraph to catch an error about angel investing, and a visible mistake does not read as a typo — it contradicts the Pipeline slide's claim of a verified pipeline. A clean demo gains you a little; a caught error costs you a lot.
+>
+> **Remember they will look again later.** The plan is to hand them the course link. In the room nobody inspects. Alone that evening, with time, they will.
+>
+> ⚠️ TODO: record end to end — from typing the description, through the advisor exchange and the syllabus review, to browsing the finished course. Time-lapse the long stretches; keep the input and the review at real speed, since those are the parts that carry meaning. Keep the raw capture too — the unedited pipeline log is good diligence material.
+>
+> ⚠️ TODO: still screenshots as a fallback for a room with no video, and for the send-after version of the deck.
 
 ---
 
-## Slide 6 — This Is a Pipeline, Not a Prompt
+## This Is a Pipeline, Not a Prompt
 
 **Headline:** Producing a course that is correct, structured, and reusable is hard engineering. This is the machine that does it.
 
@@ -195,13 +220,15 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 > **Eight pipeline stages. Two models. A sandbox. A repair loop.**
 
 > **Speaker notes:**
-> **The job of this slide is to answer "isn't this just a wrapper?" before anyone asks it.** By this point they've seen the claim (Slide 3) and the product (Slide 5). The live question is not whether the content is trustworthy — it's whether there is anything here a competent engineer couldn't rebuild in a weekend with a good prompt. Answer that by showing the machinery. Trust is the conclusion they draw on their own; do not ask for it, and do not frame this slide as a defense of quality.
+> **The job of this slide is to answer "isn't this just a wrapper?" before anyone asks it.** By this point they've seen the claim (the Solution slide) and the product (the Demo slide). The live question is not whether the content is trustworthy — it's whether there is anything here a competent engineer couldn't rebuild in a weekend with a good prompt. Answer that by showing the machinery. Trust is the conclusion they draw on their own; do not ask for it, and do not frame this slide as a defense of quality.
 >
 > Keep it short and non-technical out loud. The one line that lands with a non-technical angel: *"When Qlaudia draws a diagram, it doesn't sketch what a diagram usually looks like — it computes the actual figure and then checks it."* That's the difference between "AI wrote a textbook" and "AI wrote a textbook you'd let a student rely on."
 >
 > **Mine-once is the architectural keystone — say it first, because everything else depends on it.** You cannot verify an explanation that doesn't exist yet. The figure pipeline runs generated construction code, checks it against assertions, and repairs it on failure — a loop that takes far too long to run inside a live chat turn. Doing the work once, offline, with a repair budget, is what makes verification affordable at all. A chatbot can't do this not because the model is weaker, but because the architecture forecloses it.
 >
-> **Where content quality does belong: as a commercial advantage, not a disclaimer.** Homeschool parents (the Slide 9 beachhead) are genuinely skeptical of AI-generated material, and verified figures are how you win that objection *in the market*. Deploy it there — in a sales conversation, or when an angel raises it — rather than pre-empting a doubt half the room didn't have.
+> **Point back at the demo — they just watched this list happen.** Every bullet here was visible on the previous slide: the pipeline stages, the figure repair loop retrying, the QA model running separately. This slide is the narration for footage they have already seen, which is far stronger than describing machinery in the abstract. If you cut anything for time, cut the words, not the video.
+>
+> **Where content quality does belong: as a commercial advantage, not a disclaimer.** Homeschool parents (the beachhead on the Business Model slide) are genuinely skeptical of AI-generated material, and verified figures are how you win that objection *in the market*. Deploy it there — in a sales conversation, or when an angel raises it — rather than pre-empting a doubt half the room didn't have.
 >
 > **Three more consequences worth having ready:**
 > - **Errors get fixed permanently.** A stored concept is corrected once and every future learner gets the correction. A chatbot's mistake recurs indefinitely, because there's no artifact to fix.
@@ -216,7 +243,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Slide 7 — Why Now
+## Why Now
 
 **Headline:** Three curves crossed in the last 24 months.
 
@@ -227,7 +254,9 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 > **~$5 and about 15 minutes** to generate a ~34-concept course with written instruction, computed figures, ~107 assessment questions, and a full prerequisite graph.
 
 > **Speaker notes:**
-> **Call straight back to Slide 4.** This slide is far more persuasive as "I named the blocking constraint in 1985 and it was lifted in 2023" than as three generic market curves. The 1985 system had rigorous structure and no affordable acquisition. Today's chatbots have fluent acquisition and no structure. Qlaudia is the first moment both halves exist at once — and you can prove you've been holding one of them for forty years.
+> **Call straight back to the Founder slide.** This slide is far more persuasive as "I named the blocking constraint in 1985 and it was lifted in 2023" than as three generic market curves. The 1985 system had rigorous structure and no affordable acquisition. Today's chatbots have fluent acquisition and no structure. Qlaudia is the first moment both halves exist at once — and you can prove you've been holding one of them for forty years.
+>
+> **Attach the number to the course they just watched.** Not an abstract unit cost — *that* course, the one about raising an angel round: *"That cost about five dollars to produce."* A figure tied to an artifact in front of them is far harder to wave off than a figure on a slide.
 >
 > **The $5 figure is the most repeatable line in the deck.** "It costs about five dollars to generate what CKS needed a human expert to type in one concept at a time" is what angels say to each other afterward. Deliver it as a fact, not a boast, and let them do the multiplication.
 >
@@ -239,7 +268,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Slide 8 — Defensibility
+## Defensibility
 
 **Headline:** A filed patent, plus a content asset that compounds.
 
@@ -255,7 +284,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Slide 9 — Business Model & First Customers
+## Business Model & First Customers
 
 **Headline:** ⚠️ TODO — one primary motion, named, priced.
 
@@ -274,16 +303,20 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 - **Their stated anxiety is prerequisite gaps** — *"is my kid actually ready for algebra II?"* That is literally what the prerequisite graph computes.
 - **Verified figures matter most in math and science** — where our differentiator and their need coincide, and where competitors' AI content is weakest.
 
-### Expansion path
+### How we reach them — creators, not ads
 
-Co-ops and microschools as buying groups → broader subject coverage → domain experts publishing their own schools → institutional.
+- **Homeschool creators publish their own schools.** A curriculum reviewer with 40,000 subscribers gets *"Mrs. Anderson's Chemistry"* under her own name, for her audience
+- **Paid on revenue share**, not sponsorship — the channel costs nothing until it converts
+- Then **co-ops and associations** as buying groups, and institutional last
 
-**Pricing motion:** B2C subscription, direct. *(Full segment inventory and the alternatives considered: Appendix A9.)*
+**Pricing motion:** B2C subscription, direct. *(Full segment inventory: Appendix A9. Channel plan: Appendix A11.)*
 
 > **Speaker notes:**
-> **This is the most important unfinished slide after the founder slide, and it's the one that pays off Slide 1.** A deck that opens on $7.3T and never names a reachable number reads as unserious. A deck that opens on $7.3T and then says *"and here is the $40M segment I can win first, at this price, with these first ten customers"* reads as ambitious *and* grounded.
+> **This is the most important unfinished slide after the founder slide, and it's the one that pays off the Market slide.** A deck that opens on $7.3T and never names a reachable number reads as unserious. A deck that opens on $7.3T and then says *"and here is the $40M segment I can win first, at this price, with these first ten customers"* reads as ambitious *and* grounded.
 >
 > Listing five revenue models reads as having none. Pick one.
+>
+> **Close the gap the demo just opened — one sentence, unprompted.** They watched you build a startup-finance course and are now hearing about homeschool math. Say it before they wonder: *"The demo was a proof of generality, not the market I'm entering."* Left unsaid, the obvious question is "so which business is this?", and an angel who thinks you are undecided about your market stops listening to the rest.
 >
 > **Why homeschool math/science is the recommended beachhead — the reasoning, for when an angel challenges it:**
 >
@@ -294,7 +327,7 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 > 5. **The verified-figure pipeline matters most in math and science.** That is where a wrong diagram is fatal and where competitors' AI content is weakest. Differentiator and need coincide.
 > 6. **Reachable, concentrated communities.** State homeschool associations, conventions, co-ops, curriculum-review sites, large Facebook and Reddit groups. Cheap acquisition without a sales team.
 >
-> **Honest risks to have answers for:** (a) AI-generated content skepticism runs high among homeschool parents, especially religious ones — the figure-verification and separate-QA-model story from Slide 6 is the answer, deployed here as a sales argument rather than a disclaimer; (b) buying is seasonal, concentrated in spring and summer; (c) price sensitivity is real — this is a value-conscious buyer.
+> **Honest risks to have answers for:** (a) AI-generated content skepticism runs high among homeschool parents, especially religious ones — the figure-verification and separate-QA-model story from the Pipeline slide is the answer, deployed here as a sales argument rather than a disclaimer; (b) buying is seasonal, concentrated in spring and summer; (c) price sensitivity is real — this is a value-conscious buyer.
 >
 > **Why not the other three you raised:**
 > - **Supplementary for traditional-school parents** is a larger market but a worse fit: the subject is fixed by the school, so breadth stops mattering, and you compete head-on with free Khan Academy and entrenched IXL. High CAC, crowded.
@@ -305,47 +338,71 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 
 ---
 
-## Slide 10 — Traction
+## Traction
 
-**Headline:** Built, not planned — 64 courses already generated, solo.
+**Headline:** Live in production — 63 courses, and the first users are finishing them.
+
+**Built** *(production graph, not projections)*
 
 | | |
 |---|---|
-| Courses generated | **64** |
-| Concepts | **2,202** |
-| Assessment questions | **6,844** |
-| Prerequisite edges | **9,420** |
-| Typed concept relationships | **14,580** |
-| Generated instruction | **~4.1M tokens** |
-| Branded schools | **6** |
+| Courses live | **63** across 7 schools |
+| Concepts | **2,106** |
+| Assessment questions | **6,755** |
+| Prerequisite edges | **8,837** |
+| Typed relationships | **13,523** |
+| Generated instruction | **~3.9M tokens** |
 
-- **~$5 and ~15 minutes** per course — the efficiency metric that matters
+**Used** *(early, and honest about it)*
+
+- **One user completed five courses end to end** — 224 concepts, every one finished
+- **Two more worked a course to 92%**
+- 86 site visitors over the last four months; 15 accounts, 25 enrolments
 - ⚠️ TODO: institutional conversations, pilots, or LOIs
 
 > **Speaker notes:**
-> **Lead with what's built, and be straight about what isn't.** These are production artifacts in Neo4j, not projections — 64 complete courses with verified figures and full prerequisite graphs, generated by one person. That is real execution evidence.
+> **Lead with what's built, then volunteer what isn't.** The build numbers are real artifacts in the production graph — verifiable in a single query — produced by one person. That is execution evidence, and it is the strongest thing on the slide.
 >
-> **Do not imply user traction you don't have.** The database currently holds one real user — Charles. If an angel asks about users, say plainly: pre-launch, no user base yet, and here is the beachhead plan (Slide 9). Angels fund pre-traction constantly; they do not fund founders who appear to be hiding its absence, and a graph query would expose an overstatement in seconds.
+> **The single best data point you have is one person.** Five arrhythmia courses, 224 concepts, every one completed, in sequence. That is not browsing — that is someone using Qlaudia as their actual learning path through a hard clinical subject, and analytics show roughly 23 hours of engagement behind it. One user like that is worth more than a thousand visitors, and an angel knows it. Name him, describe what he did, and stop.
 >
-> **The reframe that works:** the risk that's been retired here is *technical*, not commercial. The pipeline works end to end, the content is verifiable, the patent is filed. What's unproven is distribution — which is exactly what the round buys.
+> **Say the quiz number before they find it.** Nobody in production has answered a single assessment question — competency is 0% across every user. Progress is self-marked "got it," not demonstrated mastery. Volunteer this: it is a product-surfacing problem, it is fixable, and it is exactly the kind of thing that destroys credibility if they discover it after you have described assessments as a differentiator on the Pipeline slide.
 >
-> ⚠️ TODO: consider a "domains generated per month" trend line once there are a few months of data — direction is more persuasive than a static count.
+> **Be equally straight about the funnel.** 86 visitors produced 15 accounts, and most engaged sessions come from two locations — Charles and the one power user. The honest reading is that the product works on the people who reach it, and almost nobody reaches it. That is a conversion problem, not a proof problem, and it is what the round addresses.
+>
+> **The reframe that works:** the risk retired here is *technical*. The pipeline works end to end, the content is verifiable, the patent is filed, and real users complete real courses. What is unproven is distribution — which is exactly what this round buys.
+>
+> ⚠️ TODO: refresh these figures the week of the pitch; they move. `scripts/list_user_enrollments.py --prod` produces the usage half.
 
 ---
 
-## Slide 11 — Use of Funds
+## Use of Funds
 
-**Headline:** ⚠️ TODO — what this round buys, and the milestone it reaches.
+**Headline:** The product is built. This round buys distribution — and the infrastructure to survive it.
 
-- ⚠️ TODO: allocation across engineering / content / GTM / runway
-- ⚠️ TODO: months of runway
-- ⚠️ TODO: the specific milestone that makes the *next* round (or profitability) achievable
+**1 · Distribution** — creator partnerships on revenue share, co-op and association relationships, and the conversion work the funnel needs. ⚠️ TODO: $
 
-> **Speaker notes:** Angels care less about a spend breakdown than about one thing: **what is measurably true after this money that isn't true today?** Name that milestone explicitly and tie every allocation line to it.
+**2 · Hardening** — everything currently runs on free tiers. Managed Neo4j with backups, an always-on backend (no cold starts on an 18-minute pipeline), observability, and hard rate limits on course generation. ⚠️ TODO: $
+
+**3 · Runway** — to the **spring 2027 homeschool buying cycle**, when curriculum is actually purchased. ⚠️ TODO: months
+
+> **The milestone this round buys:** ⚠️ TODO — *"By the spring 2027 cycle we have N creator partners, M paying families, and completion data."*
+
+> **Speaker notes:**
+> **Open with the asymmetry, in these words:** *"Most people at this stage are asking you to fund a build. I've already built it. This round funds getting it in front of people, and the infrastructure to handle them when they arrive."* Most angel deals carry both build risk and market risk; you are asking them to carry one. Say so — it is the single strongest framing available to you and it belongs here, not buried.
+>
+> **Say "feature-complete, hardening needed for scale," never "complete."** The product works, has never met load, and runs on free tiers. The precise version is credible and justifies line item 2; the simple version invites someone to go find the exception — and they will.
+>
+> **Rate limiting is a financial control, not a performance one.** Each generated course costs about $5 in model calls. Exposed without hard limits, that is a direct attack surface on your bank account. Saying this demonstrates you understand your own unit economics as a liability, not only as a selling point.
+>
+> **Why revenue starts when it starts — the calendar, not drift.** Homeschool curriculum is bought February through August; the 2026 cycle has closed. Pre-revenue here is externally imposed and dateable, which is a far better answer than any traffic projection: *"this round funds the run-up to a known buying window."*
+>
+> **Angels care about one thing on this slide: what is measurably true afterwards that isn't true today.** Name that milestone, then tie all three buckets to it.
+>
+> ⚠️ TODO: the numbers. Bucket sizes, months of runway, and the milestone — these drive the raise size on the Ask slide, so settle them first.
 
 ---
 
-## Slide 12 — The Ask
+## The Ask
 
 **Headline:** ⚠️ TODO — $⚠️ raising on a ⚠️ TODO.
 
@@ -365,7 +422,7 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 
 ---
 
-## Slide 13 — How This Returns Capital
+## How This Returns Capital
 
 **Headline:** ⚠️ TODO — the realistic exit paths.
 
@@ -384,12 +441,14 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 >
 > Don't overreach on numbers — naming plausible acquirer *categories* and why each is structurally motivated is more credible than a fabricated multiple.
 >
-> Note the publishers are simultaneously the Slide 1 competition and the most motivated acquirers. That's a strength; say so.
+> Note the publishers are simultaneously the competition named on the Market slide and the most motivated acquirers. That's a strength; say so.
+>
+> **Closing beat, after the last slide.** End on the demo rather than on the ask — hand them the link to the course they watched being built, and make the offer: *"Name any subject and I'll send you that course tomorrow."* It leaves them with something of their own rather than a request, and it gives you a reason to be back in their inbox within 24 hours without chasing.
 >
 > **The frontier-lab argument, made properly.** Three reinforcing reasons, in order of strength:
 > 1. **Cost asymmetry.** Our ~$5 per course is what a lab *charges* for inference. Their internal cost to run the identical pipeline is a fraction of that. Every unit-economic constraint we operate under disappears for them — the same asset throws off far better margins in their hands than in ours. That is the textbook definition of an acquirer who can pay more for a business than it is worth standalone.
 > 2. **Vertical integration.** Today we are their customer. Acquiring converts a customer's margin into their own product line.
-> 3. **They already have the gap.** Every frontier lab is pushing into education and every one of them ships a fluent tutor with no curriculum, no mastery model, and no prerequisite structure — precisely the deficiency on Slide 2. We are the missing layer, already built.
+> 3. **They already have the gap.** Every frontier lab is pushing into education and every one of them ships a fluent tutor with no curriculum, no mastery model, and no prerequisite structure — precisely the deficiency on the Problem slide. We are the missing layer, already built.
 >
 > **⚠️ Raising this invites the hardest question in the deck — have the answer ready before you say it.** *"If it's such a natural extension, why won't Anthropic just build it themselves?"* Answer in three parts, briefly:
 > - **The patent.** Filed non-provisional, two independent claim sets covering generation and delivery separately. This is exactly the scenario the filing exists for, and it converts "build it" into "license or acquire it."
@@ -398,7 +457,7 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 >
 > Do **not** raise the frontier-lab category unless you can deliver that rebuttal cleanly. Unanswered, "why won't the labs just do this?" is the objection most likely to kill an angel's interest — it makes the whole company sound like a feature. Answered well, it does the opposite: it says the most sophisticated buyers in technology are structurally motivated to want you.
 >
-> **This makes Slide 8 load-bearing.** If the exit story leans on frontier labs, the patent stops being a nice-to-have and becomes the thing standing between you and being built around. Expect follow-up questions on claim scope.
+> **This makes the Defensibility slide load-bearing.** If the exit story leans on frontier labs, the patent stops being a nice-to-have and becomes the thing standing between you and being built around. Expect follow-up questions on claim scope.
 
 ---
 
@@ -424,7 +483,7 @@ Delivery: readiness computed over transitive prerequisite closure against per-co
 ### A3 — Roadmap
 
 - Template layer for figure generation — the agreed next major build
-- ⚠️ TODO: remaining 12–18 month milestones, tied to the Slide 11 funding milestone
+- ⚠️ TODO: remaining 12–18 month milestones, tied to the Use of Funds milestone
 
 ### A4 — Patent detail
 
@@ -432,7 +491,7 @@ Non-provisional App. No. 19/756,145, filed 2026-07-28. Claim Set 1 covers AI-dri
 
 ### A5 — The 1985 thesis: architectural correspondence
 
-Source material for Slide 4. Charles Irvine, *The Conceptual Knowledge System (CKS)*, master's thesis, University of Kansas, 1985. ⚠️ TODO: confirm exact month; scan in full.
+Source material for the Founder slide. Charles Irvine, *The Conceptual Knowledge System (CKS)*, master's thesis, University of Kansas, 1985. ⚠️ TODO: confirm exact month; scan in full.
 
 | CKS (1985) | Qlaudia (2026) |
 |---|---|
@@ -449,7 +508,7 @@ Source material for Slide 4. Charles Irvine, *The Conceptual Knowledge System (C
 
 **Verify against the original before use.**
 
-**The two that carry Slide 4:**
+**The two that carry the Founder slide:**
 
 - Abstract, *what the system was*: *"Specifically, the program has two intended functions: as an interactive knowledge acquisition facility and, secondly, as an information retrieval facility."*
 - Abstract, *how acquisition worked*: *"While engaged in interactive dialog with a user, CKS's acquisition facility attempts to acquire the concepts which constitute the user's knowledge."*
@@ -489,7 +548,7 @@ The Substance/Relation/Change/Extent framework in `patent_application/The_Four_E
 - Fortune Business Insights, *Private Tutoring Market* — https://www.fortunebusinessinsights.com/private-tutoring-market-104753
 - Mordor Intelligence, *Language Learning Market* — https://www.mordorintelligence.com/industry-reports/language-learning-market
 
-**Cross-sector comparison and capital gap (Slide 1):**
+**Cross-sector comparison and capital gap (the Market slide):**
 
 - WHO, *Global spending on health* (2024 report, data through 2022; $9.8T, 9.9% of global GDP) — https://www.who.int/teams/health-financing-and-economics/global-spending-on-health-report
 - Gartner, *Worldwide IT Spending Forecast* ($5.43T, 2025) — https://www.gartner.com/en/newsroom/press-releases/2025-07-15-gartner-forecasts-worldwide-it-spending-to-grow-7-point-9-percent-in-2025
@@ -498,11 +557,11 @@ The Substance/Relation/Change/Extent framework in `patent_application/The_Four_E
 - HolonIQ, *EdTech funding drops again in early 2025* — https://www.holoniq.com/notes/edtech-funding-drops-again-in-early-2025-fewer-deals-but-bigger-bets
 - EdWeek Market Brief, *2024 Was the Worst Year for Ed-Tech VC Funding in a Decade* — https://marketbrief.edweek.org/financing-investment/2024-was-the-worst-year-for-ed-tech-vc-funding-in-a-decade-this-year-looks-even-worse/2025/05
 
-**Caveat for diligence:** segment figures come from commercial market-research firms whose estimates vary widely by methodology (private tutoring alone is reported anywhere from ~$67B to ~$134B for 2025). The HolonIQ top-line and the U.S. government figures are the two most defensible numbers on Slide 1; lead with those and treat the rest as directional.
+**Caveat for diligence:** segment figures come from commercial market-research firms whose estimates vary widely by methodology (private tutoring alone is reported anywhere from ~$67B to ~$134B for 2025). The HolonIQ top-line and the U.S. government figures are the two most defensible numbers on the Market slide; lead with those and treat the rest as directional.
 
 ### A8 — The same market, viewed from the United States
 
-Moved off Slide 1 to keep it presentable. Use if an American angel asks for domestic figures.
+Moved off the Market slide to keep it presentable. Use if an American angel asks for domestic figures.
 
 | Segment | Annual spend |
 |---|---|
@@ -513,7 +572,7 @@ Moved off Slide 1 to keep it presentable. Use if an American angel asks for dome
 
 ### A9 — Full candidate segment inventory
 
-Working material behind Slide 9. **Direct-pay parents and learners — no procurement cycle:**
+Working material behind the Business Model slide. **Direct-pay parents and learners — no procurement cycle:**
 
 - **Homeschool families** — buy curriculum directly, need many subjects across many grade levels
 - **Homeschool co-ops & microschools** — same buyer, multi-seat, higher ACV
@@ -581,3 +640,27 @@ Rounded to **~$5** for the slide. Roughly **$0.15 per concept**.
 - Infrastructure, Neo4j hosting, and human review time are excluded.
 - Cost varies with domain size. A 45-concept course costs meaningfully more than a 20-concept one; quote the range ($3–8) rather than the point estimate if pressed on variance.
 - **Sonnet 5's introductory rate ($2/$10) expires 2026-08-31.** This estimate deliberately uses the higher standard rate so it does not expire with the promo.
+
+### A11 — Pre-revenue plan: conversion, then channels
+
+**The finding that orders everything.** Google Analytics shows **86 active users** and 257 engaged sessions between 1 May and 22 August 2026. The production graph holds **15 accounts** and 25 enrolments. Roughly 84% of engaged sessions come from two locations — the founder, and the single power user.
+
+The product works on the people who reach it. Almost nobody reaches it, and of those who do, most never create an account. **That is a conversion problem, not an awareness problem** — and publicity spent against a leaking funnel buys a bigger leak. Sequence the spend accordingly: conversion first, channels second.
+
+**The conversion asset: a free prerequisite diagnostic.** A homeschool parent's recurring anxiety is *"does my child have gaps, and are they actually ready for algebra II?"* The transitive prerequisite graph answers exactly that, and nothing else on the market does. As a free, no-signup tool it demonstrates the differentiator instead of describing it, produces a result parents screenshot and share, captures email at peak intent, and ranks for the searches they really type. Generic free trials get ignored in this market; a diagnostic that tells a worried parent something true about their own child does not.
+
+**Channels, in priority order.**
+
+1. **Homeschool creators** — curriculum-review YouTube channels, Instagram practitioners, podcasters. Not celebrity influencers: trusted practitioners with niche, self-selected audiences. The offer is a *collaboration*, not a sponsorship — they publish a course under their own name, on their own school page, as an asset for their audience. Paid on revenue share, so the channel costs nothing until it converts and the creator only earns if their audience genuinely uses it. Budget a small guaranteed fee for the first two or three anchor partners, who take real reputational risk with no proof yet.
+2. **Curriculum review gatekeepers** — Cathy Duffy Reviews is the market's canonical authority; Homeschool Buyers Club provides group-buying distribution. Slow to earn, disproportionate payoff.
+3. **Co-ops and umbrella schools** — one director teaching eight children is a multi-seat sale *and* an endorsement to eight families.
+4. **State associations and HSLDA** — vendor listings, newsletters, member channels.
+5. **ESA and school-choice marketplaces** — several states now route public education funds to homeschool families through approved-vendor lists. Institutional process, not marketing spend, and it reaches *funded* demand. ⚠️ TODO: check the current state-by-state position; it is moving fast.
+6. **Conventions** — vendor halls are where curriculum is actually chosen. A recorded generation demo runs well in that setting.
+7. **Long-tail SEO** — the generated content is itself the asset. Publish complete sample units.
+
+**What does not work here.** Paid ads as a primary channel — this audience is ad-skeptical and word-of-mouth driven. And treating homeschoolers as one market: classical, Charlotte Mason, unschooling, secular and religious segments differ in values and objections. Upper-level maths and science plays best with the **secular and rigour-focused eclectic** segments, which have the sharpest pain and the least AI scepticism.
+
+**Creator relationships are a one-shot resource.** In a small community, a creator who sends their audience to something that disappoints will not promote again — and the other creators talk. This is the practical reason conversion work precedes outreach.
+
+**Metrics to report, and to avoid.** Raw visits will be discounted, and rightly. Report diagnostic completions, accounts created, courses started and finished, returning users, and co-op conversations in progress. Ten families who finished a unit beats ten thousand visitors, and an angel will say so.
