@@ -40,13 +40,16 @@
 
 ### Adjacent spend that is really education spend
 
-Private tutoring (~$134B global) · Corporate training (~$427B global) · Language learning (~$85B global) · Test prep & admissions · Professional licensure & continuing education (CME, CLE, CPE, bar, nursing, trades) · IT & technical certification · Homeschooling, microschools & pods · Compliance & regulatory training · Military, government & NGO training · Self-directed learning & bootcamps · Textbook & courseware publishing
-
-### The three numbers that matter
-
-1. **~$7.3T** — total annual spend on teaching human beings. Growing to **$10T by 2030**.
-2. **~5%** — the share of that spend that is digital today. The other 95% is people, buildings, and paper.
-3. **$0** — the amount currently going to a system that can generate a *rigorous, prerequisite-structured, verifiable knowledge graph* for any subject on demand.
+- **Corporate training** — ~$427B global
+- **Private tutoring** — ~$134B global
+- **Language learning** — ~$85B global
+- **Test prep & admissions** — SAT, ACT, GRE, MCAT, LSAT
+- **Professional licensure & continuing education** — CME, CLE, CPE, bar, nursing, trades
+- **IT & technical certification** — AWS, Azure, Cisco, CompTIA
+- **Homeschooling, microschools & pods**
+- **Compliance & regulatory training**
+- **Military, government & NGO training**
+- **Self-directed learning, bootcamps & courseware publishing**
 
 > **Speaker notes:**
 > **U.S. figures, if an American angel wants them (full table in Appendix A8):** K–12 public schools ~$1.0T in FY2024, the first year over a trillion, ~$17.6K per pupil. Higher education ~$712B. Corporate training ~$100B. Private tutoring ~$30B and growing double digits.
@@ -65,19 +68,37 @@ Private tutoring (~$134B global) · Corporate training (~$427B global) · Langua
 
 ---
 
+## Slide 1b — The Three Numbers That Matter
+
+**Headline:** The market is enormous, almost entirely analog, and nobody is selling the thing that would change that.
+
+1. **~$7.3T** — spent teaching people every year, growing to **$10T by 2030**
+2. **~5%** — of it is digital. The rest is people, buildings, and paper
+3. **$0** — goes to a system that can generate a verified, prerequisite-structured course on demand
+
+> **Speaker notes:**
+> **Split off Slide 1 deliberately — these three numbers are the argument, and they were getting buried under two tables.** Delivered on their own slide they land as a sequence: enormous, analog, unserved. Pause after each.
+>
+> Number three is the one that does the work. One and two are context an informed angel may already half-know; three is the claim only you can make, and it sets up every slide that follows.
+>
+> If you are running short on time, this is the slide to linger on and Slide 1 is the one to move through quickly — the tables are reference material, this is the thesis.
+
+---
+
 ## Slide 2 — The Problem
 
-**Headline:** Building a course is still artisanal. That's why education doesn't scale, doesn't adapt, and doesn't transfer.
+**Headline:** Every course is written from scratch by one expert. That's why education doesn't scale, doesn't adapt, and doesn't transfer.
 
 - **Content is hand-built.** A single university course takes an expert months. A curriculum takes years. Cost scales linearly with subjects covered.
 - **Structure is implicit.** Prerequisites live in a professor's head or a syllabus footnote — not in a machine-readable form anything can reason over.
 - **Sequencing is one-size-fits-all.** Everyone walks the same path at the same pace regardless of what they already know.
 - **AI chatbots don't fix this.** An LLM answers any question fluently, but it has no model of *what you know*, *what you must learn first*, or *whether the explanation it just gave was correct*. It tutors without a curriculum.
+- **And it re-derives the same lesson for every learner.** A chatbot regenerates algebra from scratch for each student, each time — unverified, slightly different, and paid for again on every ask.
 
 > **Speaker notes:**
 > The chatbot bullet is the one that matters. Every angel in the room has already used ChatGPT to learn something and has a private opinion about how well it went. Make the distinction concrete: a chatbot is a conversation that evaporates; Qlaudia is a structured, persistent, verifiable body of knowledge that a conversation can stand on.
 >
-> **Optional setup for Slide 4.** If you want the founder slide to detonate, plant the fuse here: "the hand-authoring bottleneck isn't new — it's the reason this whole approach was abandoned forty years ago." Then let Slide 4 reveal that you were one of the people who hit that wall and wrote it down.
+> **Optional setup for Slide 4.** If you want the founder slide to detonate, plant the fuse here: "the hand-authoring bottleneck isn't new — it's the reason this whole approach stayed impractical for forty years." Then let Slide 4 reveal that you were one of the people who hit that wall and wrote it down.
 
 ---
 
@@ -96,9 +117,7 @@ Private tutoring (~$134B global) · Corporate training (~$427B global) · Langua
 
 ## Slide 4 — Founder: I Designed This System in 1985
 
-**Headline:** My master's thesis described Qlaudia. It failed for exactly one reason — and that reason no longer exists.
-
-**[VISUAL: photograph of the 1985 thesis abstract page, beside the Qlaudia concept-graph screen]**
+**Headline:** My master's thesis described Qlaudia. I earned my master's degree in CS. But the ideas could not have been put into practice — until now.
 
 **1985 — the Conceptual Knowledge System (CKS)**, master's thesis, University of Kansas. A knowledge graph, built once and then used for two things:
 
@@ -106,7 +125,7 @@ Private tutoring (~$134B global) · Corporate training (~$427B global) · Langua
 
 **Acquisition and delivery, over a constructed graph.** Those are Qlaudia's two inventions, and the patent's two claim sets.
 
-**How acquisition worked:**
+**How acquisition worked — and why it wasn't practical:**
 
 > *"While engaged in interactive dialog with a user, CKS's acquisition facility attempts to acquire the concepts which constitute the user's knowledge."*
 
@@ -123,9 +142,11 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 >
 > **This is the strongest slide in the deck. Consider opening the meeting with it, before the market slide.** A founder holding a 41-year-old thesis that describes the product he's now shipping is something no other pitch that month can imitate. It converts the entire "why you / why now / why hasn't this been done" cluster into a single artifact.
 >
-> **Bring the physical thesis to the meeting.** Angels invest in conviction and this is conviction you can hand across a table. The photograph on the slide is the fallback; the bound copy is the moment.
+> **Bring the physical thesis to the meeting.** Angels invest in conviction and this is conviction you can hand across a table. With no image on the slide, the bound copy is now the *only* visual — so don't leave it at home.
 >
-> **The move that makes it land is quoting your own limitation.** Don't present 1985 as a triumph — present it as a diagnosis. "I built this. It worked, structurally. It failed on acquisition, and I wrote that failure into my own abstract. That specific failure is what got solved in the last three years, and I recognized it the week it happened." Self-critical framing reads as far more credible than visionary framing, and the punchline hits harder.
+> **Be precise: CKS did not fail.** The thesis was accepted and it earned the MS. The system worked — it acquired concepts, encoded them, and traversed them. What it wasn't was *practical*: filling the knowledge base required interrogating a human expert one concept at a time, so the cost of a useful knowledge base was prohibitive. Never say "it failed" — it's inaccurate, it implies the thesis was rejected, and it's a weaker claim than the true one.
+>
+> **The move that makes it land is naming the constraint in your own words.** Don't present 1985 as a triumph *or* as a failure — present it as a correct design waiting on an input that didn't exist yet. "I built this. It worked. It was never practical, because every concept had to come out of a human being one at a time. That constraint is what lifted in the last three years, and I recognized it the week it happened." Naming your own blocking constraint reads as far more credible than visionary framing, and the punchline hits harder.
 >
 > **Supporting career arc — say briefly, don't slide it:** expert systems at Boeing (1985), Lockheed Martin (1986–89), and Nortel (1989–93); then Cadence (finite state machine module shipped into multiple CAD products), Sprint (16 years, applications architect), DST Systems and TreviPay (workflow automation — dependency-graph execution, computing what can run given what's complete, which is transitive prerequisite pathfinding in different clothes). Then Charles Irvine Enterprises LLC and Academy-courses.com from 2017 — all predating the current AI cycle.
 >
@@ -133,7 +154,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 >
 > **Anticipated question — "have you run a venture-backed company before?"** No. Don't dance. The true answer that lands: a working end-to-end pipeline and a filed non-provisional patent, built solo. Execution evidence is rarer at this stage than a prior exit.
 >
-> **The age question, which nobody will ask out loud.** This slide makes a 1985 start date unavoidable, and some angels carry an unspoken bias. The counter is the slide's own argument: you are not guessing about which AI paradigm is different, because you worked the previous one and documented precisely why it failed. Depth is the asset. Have a crisp, unbothered answer ready on energy and commitment, and don't let it sound defensive.
+> **The age question, which nobody will ask out loud.** This slide makes a 1985 start date unavoidable, and some angels carry an unspoken bias. The counter is the slide's own argument: you are not guessing about which AI paradigm is different, because you worked the previous one and documented precisely what it was missing. Depth is the asset. Have a crisp, unbothered answer ready on energy and commitment, and don't let it sound defensive.
 >
 > **Institution — resolved, no action needed.** The thesis is University of Kansas, consistent with LinkedIn. Dr. van de Liefvoort, named on the thesis committee, is today emeritus at UMKC but did not join UMKC until August 1987 — two years after the thesis. If anyone ever cross-references him and raises it, that's the one-sentence answer.
 >
@@ -161,17 +182,33 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Slide 6 — Why the Content Can Be Trusted
+## Slide 6 — This Is a Pipeline, Not a Prompt
 
-**Headline:** The hard part isn't generating content. It's generating content that's *right*.
+**Headline:** Producing a course that is correct, structured, and reusable is hard engineering. This is the machine that does it.
 
-- **A concept graph, not a pile of documents** — every concept is a node, with prerequisite edges the system can reason over
-- **Figures are computed and verified, not decorative** — diagrams are produced by executing generated construction code in a sandbox, checked against independently derived assertions, and automatically repaired on failure
-- **The grader isn't the author** — assessment generation and figure verification run on a separate model from content generation
-- **Structural importance ranking** — the system knows which concepts matter most by their position in the graph
+- **Mined once, then served** — knowledge is distilled into a durable graph up front, not re-derived on every question. We pay for inference once per concept, not once per learner
+- **Figures are computed, executed, and checked** — diagrams come from generated construction code run in a sandbox, verified against independently derived assertions, and automatically repaired on failure
+- **The grader isn't the author** — assessments and figure verification run on a separate model from the one that wrote the content
+- **A concept graph, not a pile of documents** — typed relationships and prerequisite edges the system computes over
+- **Structural importance ranking** — graph centrality identifies which concepts carry the most weight
+
+> **Eight pipeline stages. Two models. A sandbox. A repair loop.**
 
 > **Speaker notes:**
-> Keep this slide short and non-technical out loud. The one line that lands with a non-technical angel: *"When Qlaudia draws a diagram, it doesn't sketch what a diagram usually looks like — it computes the actual figure and then checks it."* That's the difference between "AI wrote a textbook" and "AI wrote a textbook you'd let a student rely on."
+> **The job of this slide is to answer "isn't this just a wrapper?" before anyone asks it.** By this point they've seen the claim (Slide 3) and the product (Slide 5). The live question is not whether the content is trustworthy — it's whether there is anything here a competent engineer couldn't rebuild in a weekend with a good prompt. Answer that by showing the machinery. Trust is the conclusion they draw on their own; do not ask for it, and do not frame this slide as a defense of quality.
+>
+> Keep it short and non-technical out loud. The one line that lands with a non-technical angel: *"When Qlaudia draws a diagram, it doesn't sketch what a diagram usually looks like — it computes the actual figure and then checks it."* That's the difference between "AI wrote a textbook" and "AI wrote a textbook you'd let a student rely on."
+>
+> **Mine-once is the architectural keystone — say it first, because everything else depends on it.** You cannot verify an explanation that doesn't exist yet. The figure pipeline runs generated construction code, checks it against assertions, and repairs it on failure — a loop that takes far too long to run inside a live chat turn. Doing the work once, offline, with a repair budget, is what makes verification affordable at all. A chatbot can't do this not because the model is weaker, but because the architecture forecloses it.
+>
+> **Where content quality does belong: as a commercial advantage, not a disclaimer.** Homeschool parents (the Slide 9 beachhead) are genuinely skeptical of AI-generated material, and verified figures are how you win that objection *in the market*. Deploy it there — in a sales conversation, or when an angel raises it — rather than pre-empting a doubt half the room didn't have.
+>
+> **Three more consequences worth having ready:**
+> - **Errors get fixed permanently.** A stored concept is corrected once and every future learner gets the correction. A chatbot's mistake recurs indefinitely, because there's no artifact to fix.
+> - **Every learner gets the same vetted explanation.** Re-derivation means each student receives a slightly different, individually unverified lesson.
+> - **You can compute over a graph that exists.** Importance ranking and prerequisite pathfinding are algorithms over a persisted structure — there is nothing to run them on if the content is generated per question.
+>
+> **The margin version — this is the one that matters to an investor.** Most AI startups are inference pass-throughs: cost of goods scales linearly with usage, so gross margin never improves and the model provider captures the upside. Qlaudia inverts that. Generation cost is incurred **once per concept and amortized across every learner who ever studies it**, so cost per learner falls toward zero as usage grows. The asset appreciates while COGS stays flat. If an angel asks "isn't this just a wrapper?" — this is the answer, and it's a structural one, not a claim about the product.
 >
 > Full technical detail is in Appendix A2 for anyone who asks — don't preempt it on the slide.
 >
@@ -184,13 +221,21 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 **Headline:** Three curves crossed in the last 24 months.
 
 - **Model capability** — frontier models can now hold a full subject's structure coherently, not just answer local questions
-- **Inference cost** — generating a full domain has fallen from prohibitive to routine, and keeps falling
+- **Inference cost** — generating a complete course now costs **roughly $5** in model calls. A subject-matter expert writing the same thing takes months
 - **Institutional readiness** — post-2020, schools, universities, and employers have both the infrastructure and the permission to adopt digital-first learning
 
+> **~$5 and about 15 minutes** to generate a ~34-concept course with written instruction, computed figures, ~107 assessment questions, and a full prerequisite graph.
+
 > **Speaker notes:**
-> **Call straight back to Slide 4.** This slide is far more persuasive as "I documented the blocking constraint in 1985 and it was lifted in 2023" than as three generic market curves. The 1985 system had rigorous structure and no affordable acquisition. Today's chatbots have fluent acquisition and no structure. Qlaudia is the first moment both halves exist at once — and you can prove you've been holding one of them for forty years.
+> **Call straight back to Slide 4.** This slide is far more persuasive as "I named the blocking constraint in 1985 and it was lifted in 2023" than as three generic market curves. The 1985 system had rigorous structure and no affordable acquisition. Today's chatbots have fluent acquisition and no structure. Qlaudia is the first moment both halves exist at once — and you can prove you've been holding one of them for forty years.
 >
-> ⚠️ TODO — add the actual per-domain generation cost. That single number *is* the why-now argument compressed, and it's likely startling enough to be the most memorable figure in the deck. "It costs $X to generate what CKS needed a human expert to type in one concept at a time" is the line angels repeat to each other afterward.
+> **The $5 figure is the most repeatable line in the deck.** "It costs about five dollars to generate what CKS needed a human expert to type in one concept at a time" is what angels say to each other afterward. Deliver it as a fact, not a boast, and let them do the multiplication.
+>
+> **⚠️ It is currently an ESTIMATE, not a measurement — say so if pressed.** It is derived bottom-up from the 64 domains already in the graph (concept counts, corpus size, edge counts) priced at current model rates; the full derivation is in Appendix A10. Cost instrumentation now runs on every generation, so this becomes a measured number on the next domain created. **Replace the estimate with the measured figure before the first investor meeting** — "we measured it" is a materially stronger answer than "we estimated it," and you're one pipeline run away from being able to say it.
+>
+> **If asked "how do you know?"** — the honest answer is strong: every stored domain's concept count, content volume, and edge count is known, and model pricing is public. The estimate is arithmetic over real artifacts, not a guess. Offer the appendix.
+>
+> **Do not quote a cost lower than ~$5.** Anthropic's Sonnet 5 introductory rate expires 2026-08-31; the $5 figure already assumes the higher post-promo rate, so it stays true after the promo lapses. A number that expires this month is the wrong number for a deck.
 
 ---
 
@@ -200,7 +245,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 - **Non-provisional patent application filed** — App. No. 19/756,145, filed 2026-07-28
 - **Two independent claim sets** — generation and delivery can be enforced and licensed separately
-- **An accumulating graph** — every generated domain adds to a reusable, cross-linked corpus; shared concepts and prerequisites compound across subjects
+- **An appreciating asset** — the graph is generated once and served indefinitely. Every domain adds to a reusable, cross-linked corpus, and generation cost amortizes across every learner who ever uses it
 - **Non-obvious engineering** — the verified-figure and QA architecture is substantial work that isn't visible from the outside
 
 > **Speaker notes:**
@@ -249,7 +294,7 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 > 5. **The verified-figure pipeline matters most in math and science.** That is where a wrong diagram is fatal and where competitors' AI content is weakest. Differentiator and need coincide.
 > 6. **Reachable, concentrated communities.** State homeschool associations, conventions, co-ops, curriculum-review sites, large Facebook and Reddit groups. Cheap acquisition without a sales team.
 >
-> **Honest risks to have answers for:** (a) AI-generated content skepticism runs high among homeschool parents, especially religious ones — the figure-verification and separate-QA-model story is the answer, and it's why Slide 6 exists; (b) buying is seasonal, concentrated in spring and summer; (c) price sensitivity is real — this is a value-conscious buyer.
+> **Honest risks to have answers for:** (a) AI-generated content skepticism runs high among homeschool parents, especially religious ones — the figure-verification and separate-QA-model story from Slide 6 is the answer, deployed here as a sales argument rather than a disclaimer; (b) buying is seasonal, concentrated in spring and summer; (c) price sensitivity is real — this is a value-conscious buyer.
 >
 > **Why not the other three you raised:**
 > - **Supplementary for traditional-school parents** is a larger market but a worse fit: the subject is fixed by the school, so breadth stops mattering, and you compete head-on with free Khan Academy and entrenched IXL. High CAC, crowded.
@@ -262,14 +307,29 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 
 ## Slide 10 — Traction
 
-**Headline:** ⚠️ TODO
+**Headline:** Built, not planned — 64 courses already generated, solo.
 
-- Domains generated to date
-- Users, signups, engagement
-- Any institutional conversations, pilots, or LOIs
-- **Cost and time per generated domain** — the hard efficiency metric
+| | |
+|---|---|
+| Courses generated | **64** |
+| Concepts | **2,202** |
+| Assessment questions | **6,844** |
+| Prerequisite edges | **9,420** |
+| Typed concept relationships | **14,580** |
+| Generated instruction | **~4.1M tokens** |
+| Branded schools | **6** |
 
-> **Speaker notes:** If early-stage traction is thin, reframe honestly around what *has* been de-risked: working end-to-end pipeline, filed patent, generated domains in production. Angels fund pre-traction all the time; they do not fund founders who seem to be hiding the absence of it.
+- **~$5 and ~15 minutes** per course — the efficiency metric that matters
+- ⚠️ TODO: institutional conversations, pilots, or LOIs
+
+> **Speaker notes:**
+> **Lead with what's built, and be straight about what isn't.** These are production artifacts in Neo4j, not projections — 64 complete courses with verified figures and full prerequisite graphs, generated by one person. That is real execution evidence.
+>
+> **Do not imply user traction you don't have.** The database currently holds one real user — Charles. If an angel asks about users, say plainly: pre-launch, no user base yet, and here is the beachhead plan (Slide 9). Angels fund pre-traction constantly; they do not fund founders who appear to be hiding its absence, and a graph query would expose an overstatement in seconds.
+>
+> **The reframe that works:** the risk that's been retired here is *technical*, not commercial. The pipeline works end to end, the content is verifiable, the patent is filed. What's unproven is distribution — which is exactly what the round buys.
+>
+> ⚠️ TODO: consider a "domains generated per month" trend line once there are a few months of data — direction is more persuasive than a static count.
 
 ---
 
@@ -311,11 +371,12 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 
 **Likely acquirer categories:**
 
+- **Frontier model providers** — Anthropic, OpenAI, Google DeepMind. Each already has an education initiative and each hits the same wall: a fluent tutor with no curriculum. **They also own the input cost — what we pay $5 for, they produce for a fraction of it.** The unit economics that make this viable for us are extraordinary for them
 - **Publishers** — Pearson, McGraw Hill, Cengage: they own content and are structurally threatened by generated content
 - **Learning platforms** — Coursera, Udemy, Chegg, Duolingo
 - **LMS incumbents** — Instructure/Canvas, Anthology/Blackboard
 - **Enterprise learning** — LinkedIn Learning, Docebo, Cornerstone
-- **Big tech education arms** — Google, Microsoft
+- **Big tech platform arms** — Microsoft, Google (Classroom / Workspace for Education)
 - ⚠️ TODO: comparable transactions and multiples in this space
 
 > **Speaker notes:**
@@ -324,6 +385,20 @@ Co-ops and microschools as buying groups → broader subject coverage → domain
 > Don't overreach on numbers — naming plausible acquirer *categories* and why each is structurally motivated is more credible than a fabricated multiple.
 >
 > Note the publishers are simultaneously the Slide 1 competition and the most motivated acquirers. That's a strength; say so.
+>
+> **The frontier-lab argument, made properly.** Three reinforcing reasons, in order of strength:
+> 1. **Cost asymmetry.** Our ~$5 per course is what a lab *charges* for inference. Their internal cost to run the identical pipeline is a fraction of that. Every unit-economic constraint we operate under disappears for them — the same asset throws off far better margins in their hands than in ours. That is the textbook definition of an acquirer who can pay more for a business than it is worth standalone.
+> 2. **Vertical integration.** Today we are their customer. Acquiring converts a customer's margin into their own product line.
+> 3. **They already have the gap.** Every frontier lab is pushing into education and every one of them ships a fluent tutor with no curriculum, no mastery model, and no prerequisite structure — precisely the deficiency on Slide 2. We are the missing layer, already built.
+>
+> **⚠️ Raising this invites the hardest question in the deck — have the answer ready before you say it.** *"If it's such a natural extension, why won't Anthropic just build it themselves?"* Answer in three parts, briefly:
+> - **The patent.** Filed non-provisional, two independent claim sets covering generation and delivery separately. This is exactly the scenario the filing exists for, and it converts "build it" into "license or acquire it."
+> - **Labs build horizontally.** They ship platforms and general capability; verticals are where they acquire rather than build. A curriculum graph with domain-specific verification is not on a frontier lab's roadmap.
+> - **The hard part isn't generation.** It's the verified-figure pipeline, the separate-QA architecture, and the accumulated cross-linked graph — years of specific engineering that doesn't fall out of a better base model.
+>
+> Do **not** raise the frontier-lab category unless you can deliver that rebuttal cleanly. Unanswered, "why won't the labs just do this?" is the objection most likely to kill an angel's interest — it makes the whole company sound like a feature. Answered well, it does the opposite: it says the most sophisticated buyers in technology are structurally motivated to want you.
+>
+> **This makes Slide 8 load-bearing.** If the exit story leans on frontier labs, the patent stops being a nice-to-have and becomes the thing standing between you and being built around. Expect follow-up questions on claim scope.
 
 ---
 
@@ -472,3 +547,37 @@ Working material behind Slide 9. **Direct-pay parents and learners — no procur
 - **Supplementary for traditional-school parents** — larger, but the subject is fixed by the school so breadth stops mattering, and it competes head-on with free Khan Academy and entrenched IXL. High CAC, crowded.
 - **GED prep** — motivated buyers and real prerequisite gaps, but one fixed curriculum under-uses the generation engine, and the population is price-sensitive and often workforce-funded, which returns you to institutional selling.
 - **Domain experts publishing schools** — the right second act. A two-sided marketplace needs supply and demand solved simultaneously, which is not a solo-founder first move. It becomes powerful once there is demand to sell into, and it is how content scales past the founder.
+
+### A10 — Where the ~$5 per-course figure comes from
+
+**Status: bottom-up estimate, not yet a measurement.** Cost instrumentation (`cost.py`, wired into both pipeline phases) now records real token usage and dollar cost on every generation, including runs that fail partway. Replace this section with measured figures after the next domain is created.
+
+**Measured inputs — actual production graph, 64 domains:**
+
+| | Total | Per course |
+|---|---|---|
+| Concepts | 2,202 | ~34 |
+| Assessment questions | 6,844 | ~107 |
+| Typed relationship edges | 14,580 | ~228 |
+| Prerequisite edges | 9,420 | ~147 |
+| Stored instruction | 16.4M chars (~4.1M tokens) | ~256K chars (~64K tokens) |
+
+**Estimated model spend per course**, priced at Anthropic's **post-promotional** rates (Sonnet 5 at $3/$15 per MTok, Haiku 4.5 at $1/$5; cache reads 0.1×, cache writes 1.25×):
+
+| Component | Estimate |
+|---|---|
+| Primary model output — instruction, figure construction code, edges, prerequisites, thinking | ~175K tokens → ~$2.60 |
+| Primary model input — uncached | ~400K tokens → ~$1.20 |
+| Primary model input — cache reads and writes | → ~$0.50 |
+| QA model (assessments, figure assertions) | → ~$0.30 |
+| **Total** | **~$4.60** |
+
+Rounded to **~$5** for the slide. Roughly **$0.15 per concept**.
+
+**Caveats to state if challenged:**
+
+- Generated output exceeds stored output by roughly 2.7× — figure-repair loops, discarded candidates, and adaptive-thinking tokens are all billed but not all stored. The estimate accounts for this; a naïve estimate from stored content alone would be far too low.
+- Voyage AI embeddings and reranking are **excluded** (they bypass LangChain's callback instrumentation). They are small relative to generation but non-zero.
+- Infrastructure, Neo4j hosting, and human review time are excluded.
+- Cost varies with domain size. A 45-concept course costs meaningfully more than a 20-concept one; quote the range ($3–8) rather than the point estimate if pressed on variance.
+- **Sonnet 5's introductory rate ($2/$10) expires 2026-08-31.** This estimate deliberately uses the higher standard rate so it does not expire with the promo.

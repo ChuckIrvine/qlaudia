@@ -570,7 +570,7 @@ def _open_content_slide(prs, title: str, headline: str):
     label, rest = label.strip(), rest.strip()
     _, tf = txbox(slide, M_L, M_T, BODY_W, 0.52)
     p = tf.paragraphs[0]
-    if rest and re.match(r"^Slide\s+\d+$", label):
+    if rest and re.match(r"^Slide\s+\d+[a-z]?$", label):  # "Slide 7", "Slide 1b"
         r0 = p.add_run()
         r0.text = label.upper() + "   "
         r0.font.size, r0.font.bold, r0.font.name = Pt(11), True, FONT
