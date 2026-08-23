@@ -12,7 +12,7 @@
 
 ---
 
-## Education Is the Largest Untransformed Market on Earth
+## Slide 2 — Education Is the Largest Untransformed Market on Earth
 
 **Headline:** $7.3 trillion is spent teaching people every year. It is the last great industry whose product is still made entirely by hand.
 
@@ -68,7 +68,7 @@
 
 ---
 
-## The Three Numbers That Matter
+## Slide 3 — The Three Numbers That Matter
 
 **Headline:** The market is enormous, almost entirely analog, and nobody is selling the thing that would change that.
 
@@ -85,7 +85,7 @@
 
 ---
 
-## The Problem
+## Slide 4 — The Problem
 
 **Headline:** Every course is written from scratch by one expert. That's why education doesn't scale, doesn't adapt, and doesn't transfer.
 
@@ -102,7 +102,7 @@
 
 ---
 
-## The Solution
+## Slide 5 — The Solution
 
 **Headline:** Qlaudia generates a complete, prerequisite-structured knowledge graph for any subject — in hours, not months — and teaches from it adaptively.
 
@@ -117,7 +117,7 @@
 
 ---
 
-## Founder: I Designed This System in 1985
+## Slide 6 — Founder: I Designed This System in 1985
 
 **Headline:** My master's thesis described Qlaudia. I earned my master's degree in CS. But the ideas could not have been put into practice — until now.
 
@@ -168,7 +168,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Watch It Build a Course
+## Slide 7 — Watch It Build a Course
 
 **Headline:** Here is Qlaudia building a complete course on raising an angel round — the one subject in the world you can grade on sight.
 
@@ -207,7 +207,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## This Is a Pipeline, Not a Prompt
+## Slide 8 — This Is a Pipeline, Not a Prompt
 
 **Headline:** Producing a course that is correct, structured, and reusable is hard engineering. This is the machine that does it.
 
@@ -243,7 +243,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Why Now
+## Slide 9 — Why Now
 
 **Headline:** Three curves crossed in the last 24 months.
 
@@ -268,7 +268,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Defensibility
+## Slide 10 — Defensibility
 
 **Headline:** A filed patent, plus a content asset that compounds.
 
@@ -284,7 +284,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Business Model & First Customers
+## Slide 11 — Business Model & First Customers
 
 **Headline:** ⚠️ TODO — one primary motion, named, priced.
 
@@ -338,7 +338,7 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Traction
+## Slide 12 — Traction
 
 **Headline:** Live in production — 63 courses, and the first users are finishing them.
 
@@ -375,17 +375,22 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 
 ---
 
-## Use of Funds
+## Slide 13 — Use of Funds
 
 **Headline:** The product is built. This round buys distribution — and the infrastructure to survive it.
 
-**1 · Distribution** — creator partnerships on revenue share, co-op and association relationships, and the conversion work the funnel needs. ⚠️ TODO: $
+**1 · Distribution — $⚠️ TODO**
+Creator partnerships on revenue share, co-op and association relationships, and the conversion work the funnel needs.
 
-**2 · Hardening** — everything currently runs on free tiers. Managed Neo4j with backups, an always-on backend (no cold starts on an 18-minute pipeline), observability, and hard rate limits on course generation. ⚠️ TODO: $
+**2 · Hardening — $⚠️ TODO**
+Everything currently runs on free tiers. Managed Neo4j with backups, an always-on backend (no cold starts on an 18-minute pipeline), observability, and hard rate limits on course generation.
 
-**3 · Runway** — to the **spring 2027 homeschool buying cycle**, when curriculum is actually purchased. ⚠️ TODO: months
+**3 · Operating runway — $⚠️ TODO**
+Founder compensation, baseline hosting, and tooling through the build-up period.
 
-> **The milestone this round buys:** ⚠️ TODO — *"By the spring 2027 cycle we have N creator partners, M paying families, and completion data."*
+> **Total: $⚠️ TODO — ⚠️ N months, carrying us through the spring 2027 buying cycle.**
+
+> **What that buys:** ⚠️ TODO — *"By the spring 2027 cycle we have N creator partners, M paying families, and completion data."*
 
 > **Speaker notes:**
 > **Open with the asymmetry, in these words:** *"Most people at this stage are asking you to fund a build. I've already built it. This round funds getting it in front of people, and the infrastructure to handle them when they arrive."* Most angel deals carry both build risk and market risk; you are asking them to carry one. Say so — it is the single strongest framing available to you and it belongs here, not buried.
@@ -398,31 +403,56 @@ Every concept had to be extracted from a human being, one at a time. **The graph
 >
 > **Angels care about one thing on this slide: what is measurably true afterwards that isn't true today.** Name that milestone, then tie all three buckets to it.
 >
-> ⚠️ TODO: the numbers. Bucket sizes, months of runway, and the milestone — these drive the raise size on the Ask slide, so settle them first.
+> **The total on this slide must equal the raise on slide 14.** That is the whole reason the three buckets are stated in dollars rather than two in dollars and one in months — an angel should be able to add them up in their head and land on your ask. If the numbers don't reconcile, the obvious question is where the remainder goes, and it implies the round size was chosen before the plan. Decide what the work costs, sum it, and let that be the ask — never the reverse.
+>
+> ⚠️ TODO: the numbers. Three bucket amounts, the total, and the months of runway that total represents — the total drops straight into slide 14, so settle this slide first.
 
 ---
 
-## The Ask
+## Slide 14 — The Ask
 
 **Headline:** ⚠️ TODO — $⚠️ raising on a ⚠️ TODO.
 
-- **Raising:** ⚠️ TODO amount
+### The terms
+
+- **Raising:** $⚠️ TODO — matches the total on Slide 13
 - **Instrument:** ⚠️ TODO — SAFE (post-money cap) / convertible note / priced round
-- **Valuation cap:** ⚠️ TODO
-- **Minimum check:** ⚠️ TODO
-- **Committed to date:** ⚠️ TODO — including any founder capital
+- **Valuation cap:** $⚠️ TODO
+- **Minimum check:** $⚠️ TODO
+- **Committed to date:** $⚠️ TODO — including founder capital
 - **Target close:** ⚠️ TODO date
+
+### What your cheque buys
+
+- **Ownership** — a $⚠️ TODO cheque at a $⚠️ TODO cap is roughly ⚠️ TODO% of the company
+- **Pro-rata rights** — the right to maintain your percentage in the next round ⚠️ TODO: confirm, and whether it applies above a minimum cheque
+- **Quarterly investor updates** — progress, metrics, and what's not working
 
 > **Speaker notes:**
 > **This slide is the biggest structural difference between an angel deck and a VC deck.** A VC deck says "raising a seed round" and negotiates terms over subsequent weeks. An angel is often deciding *in the room*, and can't decide without knowing the instrument, the cap, and the minimum check. Leaving terms off the slide forces every interested angel to ask — and some won't.
 >
 > Naming a minimum check also does quiet qualification work: it tells a $10K angel they're looking at a syndicate, not a solo allocation, without an awkward conversation.
 >
-> ⚠️ TODO: Charles — a standard post-money SAFE is the lowest-friction instrument for a round of this shape, but the cap is a real decision. Worth a conversation before the first meeting, since it's hard to revise downward once quoted.
+> **What each term means — you will be asked, and hesitating here reads badly.**
+>
+> - **SAFE** — *Simple Agreement for Future Equity.* The investor pays now and receives shares later, when a priced round happens. Not a loan: no interest, no maturity date, nothing that can be called. It lets you take money without agreeing a valuation today. Y Combinator publishes the standard document free; using it unmodified keeps legal costs near zero and means no angel needs a lawyer to read novel language.
+> - **Valuation cap** — the highest company valuation their money will convert at. They get the cap price or the actual round price, **whichever is better for them**. If you later raise at $12M and their cap was $4M, their money buys shares as though the company were worth $4M — roughly three times what a new investor gets for the same cheque. That advantage is their compensation for going first.
+> - **Post-money** — means ownership is calculable immediately: cheque ÷ cap. $50k at a $4M cap is 1.25%, full stop. Be clear-eyed that with post-money SAFEs each *additional* SAFE dilutes **you**, not the earlier holders.
+> - **Minimum cheque** — the smallest allocation you will accept. It also does quiet qualification work: it tells a $10k angel they are looking at a syndicate rather than a direct allocation, without an awkward conversation.
+> - **Committed to date** — money already in or verbally committed, founder capital included. Angels move in herds; a round that is partly filled is materially easier to fill.
+> - **Pro-rata** — the *right, not the obligation,* to invest again in the next round to keep their percentage. Angels value this highly, because their returns depend on concentrating into the few winners. It costs you nothing today but consumes allocation later, which is why the usual compromise is to grant it only above a minimum cheque size.
+>
+> **Do the ownership arithmetic for them, on the slide.** A sophisticated angel will work out that a $50k cheque at a $4M cap is 1.25%; many will not bother, and some will get it wrong. Stating it signals you have thought about their side of the table.
+>
+> **Keep term-sheet detail off the slide.** Discount rates, MFN clauses and conversion mechanics belong in the SAFE document. Putting them here makes the round look like a negotiation rather than an invitation.
+>
+> ⚠️ TODO: Charles — a standard post-money SAFE is the lowest-friction instrument for a round of this shape, but the cap is a real decision. Worth a conversation before the first meeting, since it is hard to revise downward once quoted.
+>
+> ⚠️ TODO: decide whether pro-rata is offered, and above what cheque size. Under the post-money SAFE it is **not** automatic — it requires a separate side letter, so offering it is a deliberate act.
 
 ---
 
-## How This Returns Capital
+## Slide 15 — How This Returns Capital
 
 **Headline:** ⚠️ TODO — the realistic exit paths.
 

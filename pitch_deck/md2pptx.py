@@ -562,16 +562,30 @@ def max_prefix(blocks: list[Block], avail_h: float, scale: float) -> int:
     return 1
 
 
-def _open_content_slide(prs, title: str, headline: str, numbered: bool = True):
+HEADING_NUM_RE = re.compile(r"^Slide\s+(\d+)\s*[—-]\s*(.*)$")
+
+
+def _open_content_slide(prs, title: str, headline: str, numbered: bool = True,
+                        warn: list[str] | None = None):
     """Draw chrome (label, title, rule, headline); return (slide, body_top, body_height).
 
-    The "SLIDE n" chip is derived from the slide's actual position in the deck, so it
-    always matches what PowerPoint shows. Hand-written numbers drift the moment a slide
-    is added, split, or spills onto a continuation.
+    The "SLIDE n" chip is derived from the slide's actual position, so it always matches
+    what PowerPoint shows. A markdown heading may also carry its number ("## Slide 13 —
+    Use of Funds") for navigability; that number is stripped from the rendered title and
+    checked against the real position, so a stale one is reported rather than shipped.
     """
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     bg(slide, PAPER)
     position = len(prs.slides)  # 1-based; the slide just added is the last one
+
+    title_text = title
+    m = HEADING_NUM_RE.match(title)
+    if m:
+        declared, title_text = int(m.group(1)), m.group(2)
+        if declared != position and warn is not None:
+            warn.append(
+                f"heading says 'Slide {declared}' but it renders at position {position}: {title_text}"
+            )
 
     _, tf = txbox(slide, M_L, M_T, BODY_W, 0.52)
     p = tf.paragraphs[0]
@@ -580,7 +594,6 @@ def _open_content_slide(prs, title: str, headline: str, numbered: bool = True):
         r0.text = f"SLIDE {position}   "
         r0.font.size, r0.font.bold, r0.font.name = Pt(11), True, FONT
         r0.font.color.rgb = ACCENT
-    title_text = title
     r = p.add_run()
     r.text = title_text
     r.font.size, r.font.bold, r.font.name = Pt(25), True, FONT
@@ -622,7 +635,8 @@ def render_content(prs, s: Slide, warn: list[str]):
     while True:
         title = s.title if first else f"{s.title}  (cont.)"
         slide, y, avail = _open_content_slide(
-            prs, title, s.headline if first else "", numbered=not s.appendix
+            prs, title, s.headline if first else "", numbered=not s.appendix,
+            warn=warn if first else None,
         )
 
         if remaining:
@@ -683,6 +697,12 @@ def build(src: Path, out: Path) -> None:
     print(f"wrote {out}  ({len(prs.slides)} slides)")
     noted = sum(1 for s in slides if s.notes)
     print(f"speaker notes attached to {noted} slides")
+    stale = [w for w in warn if w.startswith("heading says")]
+    if stale:
+        print("\nSTALE HEADING NUMBERS - fix the markdown:")
+        for w in stale:
+            print(f"  - {w}")
+    warn = [w for w in warn if not w.startswith("heading says")]
     if warn:
         print("\nDENSE - may overflow, consider splitting:")
         for t in warn:
