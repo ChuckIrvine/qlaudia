@@ -7,3 +7,8 @@ pitch_deck/.venv/
 
 # PowerPoint lock files
 ~$*
+
+# USPTO payment receipts — contain card last-4 and payment transaction IDs.
+# This repo is public. The acknowledgement receipt is the document with
+# evidentiary value (MPEP 503); the payment receipt adds nothing but PII.
+patent_application/**/payment_receipt.pdf

@@ -6,6 +6,44 @@ Prepared for filing alongside the non-provisional application (`non_provisional_
 
 ---
 
+## Filing List — as submitted 2026-08 (Application 19/756,145)
+
+Sixteen U.S. patent documents. **No copies are required**: 37 CFR 1.98(a)(2)(ii) requires a legible copy of each publication "other than U.S. patents and U.S. patent application publications," and every item below is one or the other.
+
+**Issued U.S. patents (9)** — enter without commas:
+
+| Cite | Number | Entry |
+|---|---|---|
+| 1 | US 11,645,095 B2 | `11645095` |
+| 2 | US 10,490,092 B2 | `10490092` |
+| 3 | US 11,403,565 B2 | `11403565` |
+| 4 | US 7,052,277 B2 | `7052277` |
+| 5 | US 9,189,968 B1 | `9189968` |
+| 6 | US 9,672,470 B2 | `9672470` |
+| 7 | US 11,798,529 B2 | `11798529` |
+| 8 | US 8,909,653 B1 | `8909653` |
+| 9 | US 8,832,117 B2 | `8832117` |
+
+**U.S. patent application publications (7)**:
+
+| Cite | Number | Entry |
+|---|---|---|
+| 10 | US 2023/0351102 A1 | `20230351102` |
+| 11 | US 2023/0259705 A1 | `20230259705` |
+| 12 | US 2019/0226868 A1 | `20190226868` |
+| 13 | US 2022/0327946 A1 | `20220327946` |
+| 14 | US 2025/0112878 A1 | `20250112878` |
+| 15 | US 2025/0131289 A1 | `20250131289` |
+| 16 | US 2014/0356846 A1 | `20140356846` |
+
+**Note on the split of former entry 16:** the research list below bundles `US 8,909,653 B1 / US 8,832,117 B2 / US 2014/0356846 A1` as a single row. An IDS lists documents, not families, so these are filed as three separate citations (cites 8, 9, and 16 above).
+
+**Non-patent literature — deliberately omitted.** Former research entries 14 and 15 ("course-prerequisite-network research applying centrality measures" and "general RAG literature on hybrid vector search + reranking") describe *genres of literature, not documents*. 37 CFR 1.98(b)(5) requires each publication to be identified by publisher, author, title, relevant pages, date, and place of publication; neither entry supplies any of these, and the underlying scan (`prior_art_scan_inv3_5_summary.md`) names no specific paper. A non-compliant entry risks the entire IDS being held non-compliant under MPEP 609.05(a). The duty under 37 CFR 1.56 attaches to specific documents known to be material, not to general familiarity with a field. **If a specific paper is later identified, disclose it via a supplemental IDS.**
+
+**IDS size fee assertion — required.** Since 2026-01-19, 37 CFR 1.98(a)(4) requires every IDS to carry a written assertion about the size fee. At 16 references (threshold is 50) the correct selection is *"No IDS size fee is required under 37 CFR 1.17(v) at this time."* Without the assertion the IDS is **placed in the file but not considered** — it is not a formality.
+
+---
+
 ## U.S. Patents and Published Applications
 
 | # | Reference | Relevance |
