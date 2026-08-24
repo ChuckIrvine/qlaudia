@@ -80,7 +80,7 @@
 1. **~0.1%** ChatBot AI, conversational — most students use it, almost nobody pays for it
 2. **~$0** — AI generated and enabled *courseware*: manufactured, prerequisite-structured, verified, persistent
 
-**We don't displace the chatbot. We give it something to teach from.**
+**We don't displace the chatbot. We supplement it and interact with it.**
 
 > **Speaker notes:**
 > **The taxonomy is the argument.** Qlaudia is not a better product inside an existing bucket — it is in a bucket of its own. A better LMS competes with Canvas. A new category competes with nothing.
@@ -477,8 +477,6 @@ Founder compensation, baseline hosting, and tooling through the build-up period.
 
 ## Slide 14 — How This Returns Capital
 
-**Headline:** ⚠️ TODO — the realistic exit paths.
-
 **Likely acquirer categories:**
 
 - **Frontier model providers** — Anthropic, OpenAI, Google DeepMind. Each already has an education initiative and each hits the same wall: a fluent tutor with no curriculum. **They also own the input cost — what we pay $5 for, they produce for a fraction of it.** The unit economics that make this viable for us are extraordinary for them
@@ -487,7 +485,6 @@ Founder compensation, baseline hosting, and tooling through the build-up period.
 - **LMS incumbents** — Instructure/Canvas, Anthology/Blackboard
 - **Enterprise learning** — LinkedIn Learning, Docebo, Cornerstone
 - **Big tech platform arms** — Microsoft, Google (Classroom / Workspace for Education)
-- ⚠️ TODO: comparable transactions and multiples in this space
 
 > **Speaker notes:**
 > **This slide does not exist in a typical VC deck, and it must exist here.** A VC's returns come from portfolio construction and they'll model exits themselves. An angel is writing a personal check with no fund structure behind it and is asking, consciously or not, *"how does this become money again?"* Answering it unprompted is a mark of respect for their position.
@@ -524,8 +521,6 @@ Suggested 2×2 axes: **structured & verified ↔ unstructured**, and **content g
 - **Incumbent EdTech / LMS** (Canvas, Blackboard, Coursera, Khan Academy) — delivery infrastructure over hand-built content
 - **AI tutoring startups** — conversation layers over existing curricula
 - **Publishers** (Pearson, McGraw Hill, Cengage) — own the content, but it's manually produced and static
-
-> ⚠️ TODO: Charles to confirm which competitors actually come up in his conversations. Moved out of the main deck for angels — the named-competitor grid is a VC-diligence artifact, and the differentiation argument is already carried by Slides 2, 3, and 6. Bring it back into the main deck if a specific investor asks.
 
 ### A2 — Technical architecture
 
