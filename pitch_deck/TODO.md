@@ -41,8 +41,10 @@ grows onto another continuation slide. Names are given alongside for that reason
 
 **Do these in order.** Slide 12's numbers determine slide 13's ask; settling the ask first means redoing it.
 
-- [ ] **1. Slide 12 · Use of Funds — the numbers.**
-      Amounts for the three buckets (distribution / hardening / runway), months of runway, and the milestone the round reaches. The milestone is the important one: *what is measurably true after this money that isn't true today?*
+- [ ] **1. Slide 12 · Use of Funds — mostly done; the runway number is open.**
+      Buckets and total are set: schools and sponsors $15k, purchasing $5k, hardening $10k, legal and formation $3k, operating runway $5k — **$38,000 total**. The milestone is set too: three sponsored schools live, audiences arriving, paying customers through checkout.
+      **Still open: months of runway.** Think hard about this one. Recruiting SMEs, generating and reviewing their courses, launching, waiting for an audience, building purchasing and converting is realistically four to six months of work. Three months would mean missing the milestone in front of the people who funded it, which is worse than asking for a longer runway now.
+      Founder takes no compensation — retired with independent income. ⚠️ Add that line to the slide so the blank reads as a decision rather than an oversight.
 
 - [ ] **2. Slide 13 · The Ask — the terms.** Two blocks to fill.
 
@@ -55,6 +57,7 @@ grows onto another continuation slide. Names are given alongside for that reason
       - **Pro-rata is not automatic** under the post-money SAFE; it needs a separate side letter. Granting it costs nothing today but consumes allocation in your next round, which is why the usual compromise is to offer it only above a minimum cheque size.
 
       Definitions of every term are in slide 13's speaker notes, written for reading aloud under questioning.
+      **Gated by item 19** — a SAFE cannot be issued by an LLC, so the entity has to exist first. Raise amount is now known: **$38,000** (slide 12 total).
 
 - [ ] **3. Slide 10 · Business Model — the numbers behind the model.**
       The model and the split are settled (item 17): founding sponsors keep **80% for life**, later cohorts at a standard rate. What is still open: **which schools go first and which SMEs to approach**, by name; the bottom-up number — schools × audience × conversion × price; and whether 80% is of **gross or net** after payment processing.
@@ -65,8 +68,11 @@ grows onto another continuation slide. Names are given alongside for that reason
       - [ ] **Read the course before recording.** The 5–8 concepts that appear on camera, plus anything touching deal terms, dilution, or valuation caps. ~20 minutes. Pre-generating exists so you can inspect before they do.
       - [ ] Still screenshots as a fallback for rooms without video, and for the send-after deck.
 
-- [ ] **5. Slide 6 · Founder — name an advisor.**
-      The one real gap on slide 6. With the beachhead settled, the natural candidate is a **first school sponsor** who works out — an SME with an audience, on a small vesting equity grant. That closes the credibility gap and deepens a distribution partner in one conversation.
+- [ ] **5. Slide 6 · Founder — name an advisor, and answer key-person risk.**
+      The natural candidate is a **first school sponsor** who works out — an SME with an audience, on a small vesting equity grant. That closes the credibility gap and deepens a distribution partner in one conversation.
+      **Recruit for the solo-founder risk, not for age optics.** Of the three things an angel actually worries about — time horizon, key-person risk, succession — two are solo-founder problems that age merely makes louder. Someone brought in to fix appearances will read as exactly that, and the equity is permanent.
+      **Have the "what if you stop" answer ready:** the patent and the generated corpus are transferable assets with value independent of the founder. That defuses most of the concern in one sentence. Don't raise age unprompted; visible ease with it is a stronger signal than any argument.
+      ⚠️ TODO: decide advisor vs. named first hire vs. co-founder. An advisor plus a documented succession answer covers this round; a co-founder is worth the equity only if the goal is a genuine partner.
 
 ---
 
@@ -102,6 +108,8 @@ grows onto another continuation slide. Names are given alongside for that reason
 
 ---
 
+---
+
 ## Open decisions
 
 - [ ] **16. Slides 2–3 · Market slide length.** The adjacent-spend bullets pushed slide 2 into needing a companion, slide 3. Moving them to the appendix would fold the two back together. Cheap to do now — the converter numbers slides by position, so nothing downstream needs renumbering.
@@ -114,7 +122,33 @@ grows onto another continuation slide. Names are given alongside for that reason
 
       Consequences already applied: the Business Model slide rewritten, the Traction slide leads with 7 live schools and the forum experiment, Use of Funds gains course purchasing as its own bucket, and Appendix A11 rebuilt around SME recruitment.
 
+- [ ] **18. Who to approach first — start with people who already know you.**
+      Thirty years of Kansas City technology colleagues (Sprint, DST, Cadence, TreviPay), many now senior, some with liquidity. Nobody who has watched your work for decades will discount you on age, and at $38,000 this round is one or two people rather than a syndicate. That makes *who* far more important than *how many*, and it routes around the age question entirely rather than arguing with it.
+      ⚠️ TODO: name the first five to call.
+
 ---
+
+## Legal, formation and accounting
+
+- [ ] **19. Form the entity — do this before taking a dollar.** ← *gates item 2*
+      **A SAFE cannot be issued by an LLC.** The documents convert into stock, LLC investors receive K-1s and can owe tax on income they never received, and QSBS — often an angel's single biggest tax incentive — requires C-corp stock. Any later VC round requires a Delaware C-corp regardless.
+      Charles Irvine Enterprises LLC is now effectively clean: Top Gun Pool League, Mozart, Opera and Academy-courses.com are all obsolete and retirable. Converting would preserve the 2017 formation date that supports the pre-ChatGPT provenance on slide 6, but bespoke conversion costs several times a fresh formation. **On a $38k round, form fresh** — the 2017 date is provable from LLC records, domain registrations and public GitHub history.
+      - [ ] Delaware C-corp via Stripe Atlas or Clerky (a few hundred dollars)
+      - [ ] **Assign the IP to it** — patent App. No. 19/756,145 explicitly, plus code, content, trademarks, domains. This gets diligenced; a patent left in a personal or LLC name is a finding
+      - [ ] Founder stock issued, then the **83(b) election — 30-day hard deadline from issuance, no relief if missed.** The most common expensive founder mistake there is
+      - [ ] Decide the securities path: Reg D **506(b)** (no general solicitation — you may not publicly advertise that you are raising) or **506(c)** (may advertise, but must *verify* accreditation)
+      - [ ] Business bank account in the new entity's name
+      - [ ] Confirm the retired projects left no users, payments or open obligations behind — "no liabilities, and here's why" is worth being able to say flatly
+      - [ ] Keep **academy-courses.com** registered and pointed at Qlaudia; it is cheap evidence for the 2017 provenance
+
+- [ ] **20. After the raise opens.**
+      Form D with the SEC within 15 days of first sale; state blue-sky notices where investors reside; a cap table that is actually maintained; bookkeeping from day one (the cost instrumentation is genuinely useful here as COGS data). Ask an accountant about the **R&D tax credit** — startups can offset payroll taxes with it, and there are years of build behind you.
+
+- [ ] **21. Product-side legal, before purchasing ships.**
+      - **Payments make you a marketplace.** Paying sponsors a share means handling third-party funds — likely Stripe Connect rather than plain Stripe, and 1099s for any sponsor paid over $600 in a year. This shapes the integration, so settle it before building
+      - **Medical content liability.** The arrhythmia school is patient-facing health information and needs disclaimers written by someone who does this professionally
+      - **Minors.** A 7–12 maths school means under-13 users are plausible — that is COPPA, with real requirements on parental consent and data collection. FERPA applies if you ever sell into schools
+      - Terms of service and a privacy policy, given auth, user data and imminent payments
 
 ## Known weak points to have answers for
 

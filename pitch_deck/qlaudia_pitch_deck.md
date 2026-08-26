@@ -313,7 +313,7 @@ Content marketplaces die because experts won't write courses — it costs them m
 
 Not established authorities with reputations to protect — **teachers and practitioners with a reputation to build**, ideally ones who already have an audience. The risk calculus runs their way, which is why they say yes.
 
-**First move: a few schools, not many.** ⚠️ TODO: which, and how many.
+**First move: a few schools, not many.**
 
 **Then:** institutional licensing, enterprise seats, and licensing the generation engine itself. *(Appendix A9.)*
 
@@ -372,7 +372,6 @@ Not established authorities with reputations to protect — **teachers and pract
 - **Two more worked a course to 92%**
 - **The one distribution test we ran, worked** — a post to an arrhythmia forum, from a patient, produced our best traffic and that power user
 - 86 site visitors over the last four months; 15 accounts, 25 enrolments
-- ⚠️ TODO: institutional conversations, pilots, or LOIs
 
 > **Speaker notes:**
 > **Lead with what's built, then volunteer what isn't.** The build numbers are real artifacts in the production graph — verifiable in a single query — produced by one person. That is execution evidence, and it is the strongest thing on the slide.
@@ -395,21 +394,24 @@ Not established authorities with reputations to protect — **teachers and pract
 
 **Headline:** The product is built. This round buys distribution — and the infrastructure to survive it.
 
-**1 · Schools and sponsors — $⚠️ TODO**
+**1 · Schools and sponsors — $15,000**
 Recruiting subject-matter experts, honoraria for the review work, generating their courses, and the conversion work the funnel needs.
 
-**2 · Course purchasing — $⚠️ TODO**
+**2 · Course purchasing — $5,000**
 Checkout, entitlements, revenue-share accounting and payouts. Roughly two weeks of engineering, built **once an SME's audience actually shows up** — not before.
 
-**3 · Hardening — $⚠️ TODO**
+**3 · Hardening — $10,000**
 Everything currently runs on free tiers. Managed Neo4j with backups, an always-on backend (no cold starts on an 18-minute pipeline), observability, and hard rate limits on course generation.
 
-**4 · Operating runway — $⚠️ TODO**
-Founder compensation, baseline hosting, and tooling through the build-up period.
+**4 · Legal, formation and accounting — $3,000**
+Delaware C-corp, IP assignment, founder stock and 83(b), SAFE documents, and bookkeeping set-up.
 
-> **Total: $⚠️ TODO — ⚠️ N months: long enough to recruit sponsors, launch their schools, and see whether their audiences pay.**
+**5 · Operating runway — $5,000**
+Baseline hosting and tooling through the build-up period.
 
-> **What that buys:** ⚠️ TODO — *"N sponsored schools live, their audiences arriving, and paying customers through checkout."* The milestone is that the **mechanism** works and people pay — not that we found the hit. Lift-off is the round after.
+> **Total: $38,000 — 3 months: long enough to recruit sponsors, launch their schools, and see whether their audiences pay.**
+
+> **What that buys:** *"3 sponsored schools live, their audiences arriving, and paying customers through checkout."* The milestone is that the **mechanism** works and people pay — not that we found the hit. Lift-off is the round after.
 
 > **Speaker notes:**
 > **Open with the asymmetry, in these words:** *"Most people at this stage are asking you to fund a build. I've already built it. This round funds getting it in front of people, and the infrastructure to handle them when they arrive."* Most angel deals carry both build risk and market risk; you are asking them to carry one. Say so — it is the single strongest framing available to you and it belongs here, not buried.
@@ -419,6 +421,12 @@ Founder compensation, baseline hosting, and tooling through the build-up period.
 > **Rate limiting is a financial control, not a performance one.** Each generated course costs about $5 in model calls. Exposed without hard limits, that is a direct attack surface on your bank account. Saying this demonstrates you understand your own unit economics as a liability, not only as a selling point.
 >
 > **Why revenue starts when it starts.** Sponsors have to be recruited, their courses generated and reviewed, and their audiences given time to arrive before there is anything to convert. That is a sequence, not a delay — and it is a better answer than a traffic projection. Where a school is aimed at homeschool families, the February-to-August curriculum buying season applies and the 2026 cycle has already closed; say that only for the schools it is true of, not as the frame for the whole round.
+>
+> **Why legal is its own line and not buried in runway.** An angel reading a use-of-funds slide with no legal line wonders whether you have thought about the entity at all — and the entity question is the first thing they need answered, because they cannot put a SAFE into an LLC. Naming it shows you know that.
+>
+> **Keep it to ~$3k by using the cheap path.** Stripe Atlas or Clerky will form a Delaware C-corp with founder stock and the 83(b) for a few hundred dollars; the YC SAFE documents are free and should be used unmodified. Reserve the remaining budget for one lawyer conversation on IP assignment and the securities exemption. A bespoke conversion from the existing LLC would cost several times this — see the trade-off note below.
+>
+> **The LLC-continuity trade-off, if asked.** Converting Charles Irvine Enterprises LLC preserves the 2017 formation date, which supports the pre-ChatGPT provenance on the Founder slide. Forming fresh is far cheaper but loses entity continuity. The 2017 date is provable other ways — LLC records, domain registrations, public GitHub history — so on a round this size, forming fresh is the defensible choice.
 >
 > **Bucket 2 is deliberately sequenced, and saying so is a strength.** Purchasing is about two weeks of work and it is not first, because the unproven thing is whether an SME's audience arrives — not whether Stripe works. Launch free, measure, then build checkout against real demand. Spending eighty hours on a till for a shop nobody visits is the classic pre-revenue mistake, and being explicit that you have avoided it reads as discipline.
 >
