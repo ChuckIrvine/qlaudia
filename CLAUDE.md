@@ -134,6 +134,7 @@ cp .env.example .env                 # fill in keys
 - `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD`
 - `ANTHROPIC_API_KEY`, `VOYAGE_API_KEY`
 - `GROQ_API_KEY` (optional, for Groq LLM)
+- `RESEND_API_KEY`, `FEEDBACK_TO_EMAIL` — course-creation notices are emailed to the site owner through Resend (skipped when unset)
 - `PRIMARY_LLM_PROVIDER` — `anthropic` (default) or `groq`
 - `QA_LLM_PROVIDER` — `anthropic` (default) or `groq`
 - `ALLOWED_ORIGINS` — comma-separated CORS origins (default: `http://localhost:3000`)
