@@ -22,10 +22,9 @@ cd qlaudia_ui
 npm run dev          # start dev server on :3000
 npm run build        # production build
 npm run lint         # ESLint
-
-npm run env:dev      # switch to local .env.local (points to local Neo4j + local FastAPI)
-npm run env:prod     # switch to prod .env.local (points to prod Neo4j + prod FastAPI)
 ```
+
+`.env.local` always points to the local Neo4j and local FastAPI. Real courses are created on the production site and copied to the local database with `scripts/refresh_local_from_prod.py`.
 
 ### Architecture
 
@@ -115,7 +114,7 @@ cp .env.example .env                 # fill in keys
 
 ```bash
 .venv/bin/python scripts/delete_domain.py -local
-.venv/bin/python scripts/migrate_to_prod.py --domain "Domain Name"
+.venv/bin/python scripts/refresh_local_from_prod.py
 ```
 
 ---
@@ -127,6 +126,7 @@ cp .env.example .env                 # fill in keys
 - `VOYAGE_API_KEY`
 - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`
 - `DOMAIN_CREATOR_IDS` — comma-separated Clerk user IDs allowed to create domains
+- `REVIEWER_CLERK_IDS` — comma-separated Clerk user IDs of the people who review flagged courses at `/admin/reviews`; differs per environment
 - `EDITOR_PERMISSIONS` — `userId:domain1,domain2;userId2:*`
 - `NEXT_PUBLIC_FASTAPI_URL` — URL of the FastAPI server
 
