@@ -13,7 +13,9 @@ Structure understood by this converter (see the markdown's own "Convention" bloc
     > ...                       -> pull quote rendered on the slide
     **[VISUAL: ...]**           -> a dashed image placeholder
 
-Usage:  .venv/bin/python md2pptx.py [source.md] [output.pptx]
+Usage:  .venv/bin/python md2pptx.py [source.md] [output.pptx] [--no-numbers]
+
+--no-numbers leaves the "SLIDE n" chip off content slides, for a slide shown on its own.
 """
 
 from __future__ import annotations
@@ -627,7 +629,7 @@ def _place(slide, blocks, mode, scale, y):
         render_blocks(slide, rgt, M_L + colw + COL_GAP, y, colw, scale)
 
 
-def render_content(prs, s: Slide, warn: list[str]):
+def render_content(prs, s: Slide, warn: list[str], numbered: bool = True):
     """Render one markdown section, spilling onto '(cont.)' slides when it overruns."""
     remaining = list(s.blocks)
     first = True
@@ -635,7 +637,7 @@ def render_content(prs, s: Slide, warn: list[str]):
     while True:
         title = s.title if first else f"{s.title}  (cont.)"
         slide, y, avail = _open_content_slide(
-            prs, title, s.headline if first else "", numbered=not s.appendix,
+            prs, title, s.headline if first else "", numbered=numbered and not s.appendix,
             warn=warn if first else None,
         )
 
@@ -676,7 +678,7 @@ def add_notes(slide, notes: list[str]):
 
 # ---------------------------------------------------------------- main
 
-def build(src: Path, out: Path) -> None:
+def build(src: Path, out: Path, numbered: bool = True) -> None:
     slides = parse(src.read_text(encoding="utf-8"))
 
     prs = Presentation()
@@ -690,7 +692,7 @@ def build(src: Path, out: Path) -> None:
         elif s.kind == "divider":
             render_divider(prs, s)
         else:
-            render_content(prs, s, warn)
+            render_content(prs, s, warn, numbered)
 
     prs.save(out)
 
@@ -710,6 +712,7 @@ def build(src: Path, out: Path) -> None:
 
 
 if __name__ == "__main__":
-    src = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).parent / "qlaudia_pitch_deck.md"
-    out = Path(sys.argv[2]) if len(sys.argv) > 2 else src.with_suffix(".pptx")
-    build(src, out)
+    paths = [a for a in sys.argv[1:] if not a.startswith("--")]
+    src = Path(paths[0]) if len(paths) > 0 else Path(__file__).parent / "qlaudia_pitch_deck.md"
+    out = Path(paths[1]) if len(paths) > 1 else src.with_suffix(".pptx")
+    build(src, out, numbered="--no-numbers" not in sys.argv)
